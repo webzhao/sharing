@@ -80,7 +80,6 @@
                         return '</section>\n' + (group2 || '<section>');
                     });
                     html = '<section>' + html + '</section>';
-                    console.log(html);
 					document.getElementById('slides').innerHTML = html;
 					initSlides();
 				}
@@ -90,7 +89,7 @@
                 alert('没有指定要演示的文档！');
                 window.location.href = 'index.html';
             } else {
-                httpRequest.open('GET', 'content/' + match[1] + '.md' , true);
+                httpRequest.open('GET', 'content/' + match[1] + '.md?_t' + Math.random() , true);
                 httpRequest.send(null);
             }
 		})();

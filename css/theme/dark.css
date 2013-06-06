@@ -33,7 +33,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 0.5em 0;
   color: #eeeeee;
   line-height: 0.9em;
   letter-spacing: -0.03em;
@@ -70,19 +70,9 @@ body {
  *********************************************/
 .reveal section img {
   margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #eeeeee;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear; }
-
-.reveal a:hover img {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #e7ad52;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+  border: none;
+  background: none;
+}
 
 /*********************************************
  * NAVIGATION CONTROLS
@@ -135,6 +125,18 @@ body {
 .tag-microsharing {
   position: relative;
 }
+.tag-microsharing:before {
+  content: '';
+  width: 0.15em;
+  height: 0.15em;
+  border-radius: 100%;
+  background: #111;
+  display: block;
+  position: absolute;
+  top: -0.2em;
+  right: 0.28em;
+  z-index: 1;
+}
 .tag-microsharing:after {
   content: '微分享';
   display: block;
@@ -144,6 +146,7 @@ body {
   font-size: 50%;
   color: #fff;
   width: 4em;
+  padding-left: 0.5em;
   text-align: center;
   background: #999;
   color: #000;
@@ -170,6 +173,15 @@ body {
 .red body {
   background: #f44;
 }
+.white body {
+  background: #eee;
+}
+.gray body {
+  background: #ccc;
+}
+.dark body {
+  background: #666;
+}
 /*********************************************
  * background image
  *********************************************/
@@ -189,4 +201,9 @@ body {
 }
 .reveal pre code {
     padding: .5em;
+}
+
+.reveal em {
+    font-style: normal;
+    color: #9c0;
 }
