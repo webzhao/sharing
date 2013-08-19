@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>分享</title>
@@ -8,8 +8,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <style>
+.reveal [class^="icon-"],
+.reveal [class*=" icon-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+        </style>      
 		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/monokai.css">
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -43,6 +55,7 @@
 				progress: true,
 				history: true,
 				center: true,
+                rollingLinks: false,
 
 				theme: 'dark', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
@@ -52,7 +65,7 @@
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlighting(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
@@ -66,7 +79,7 @@
          * translate markdown
          */
         function compileMarkdown(md) {
-            return marked(md);
+            return marked(md, {gfm:false});
         };
 
 
@@ -79,17 +92,22 @@
                     html = html.replace(/(<\/section>)?\s*<hr>\s*(<section[^>]*>)?/ig, function(matched, group1, group2){
                         return '</section>\n' + (group2 || '<section>');
                     });
-                    html = '<section>' + html + '</section>';
+                    html = html.replace(/^\s*(<section[^>]*>)?/, function(matched, group1){
+                        return group1 || '<section>';
+                    });
+                    html = html.replace(/(<\/section>)?\s*$/, '</section>');
 					document.getElementById('slides').innerHTML = html;
 					initSlides();
 				}
 			};
-            var match = /[?&]file=([\w\d-]+)/.exec(location.search);
+            var match = /[?&]file=([\w\d-_\/~\.]+)/.exec(location.search);
             if (!match) {
                 alert('没有指定要演示的文档！');
                 window.location.href = 'index.html';
             } else {
-                httpRequest.open('GET', 'content/' + match[1] + '.md?_t' + Math.random() , true);
+                var file = match[1];
+                var url = file.indexOf('/') > -1 ? file : ('content/' + file + '.md');
+                httpRequest.open('GET', url + '?_t' + Math.random() , true);
                 httpRequest.send(null);
             }
 		})();

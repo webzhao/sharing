@@ -1,0 +1,65 @@
+body {
+    font: normal 16px/1.8 "Segoe UI Light", "Lucida Grande", "Microsoft Jhenghei", "Microsoft Yahei";
+    padding: 2em;
+    background: #444;
+}
+h1, h2, h3 {
+    font-weight: normal;
+}
+h1 {
+    font-size: 400%;
+    margin: .3em 0;
+}
+a {
+    text-decoration: none;
+}
+#doc {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 800px;
+    background: #f1f1f1;
+    padding: 2em 3em;
+    color: #666;
+}
+.decks {
+    overflow: hidden;
+    *zoom: 1;
+    margin: 0;
+    padding: 0;
+}
+.decks .deck {
+    float: left;
+    margin: 2em 2em 2em;
+}
+.deck {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 15em;
+    height: 12em;
+    overflow: hidden;
+    background: #333;
+    padding: 1em;
+    text-align: center;
+}
+.deck .title {
+    font-size: 150%;
+    color: #fff;
+    color: rgba(255,255,255,0.7);
+    max-height: 4em;
+    overflow: hidden;
+    -webkit-transition: color 0.1s ease-in;
+    transition: color 0.1s ease-in;
+}
+.deck .subtitle {
+    color: #fff;
+    color: rgba(255,255,255,0.3);
+    -webkit-transition: color 0.1s ease-in;
+    transition: color 0.1s ease-in;
+}
+.deck a:hover .title {
+    color: #fff;
+}
+.deck a:hover .subtitle {
+    color: #fff;
+}

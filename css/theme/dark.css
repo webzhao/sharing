@@ -198,12 +198,39 @@ body {
     font-size: 1em;
     line-height: 1.25;
     font-family: Consolas;
+    margin: 1em auto;
 }
 .reveal pre code {
+    font-family: Consolas;
     padding: .5em;
 }
 
 .reveal em {
     font-style: normal;
     color: #9c0;
+}
+.reveal blockquote {
+    text-align: left;
+}
+.reveal .masked {
+    background: #000;
+    background: rgba(0,0,0,0.5);
+}
+.reveal pre .line {
+  overflow: visible;
+  border-left: 2em solid #000;
+  position: relative;
+}
+.reveal pre .line:after {
+  display: block;
+  content: '1.\00000a2.\00000a3.\00000a4.\00000a5.\00000a6.\00000a7.\00000a8.\00000a9.\00000a10.\00000a11.\00000a12.\00000a13.\00000a14.\00000a15.\00000a16.\00000a17.\00000a18.\00000a19.\00000a20.\00000a21.';
+  width: 1.5em;
+  position: absolute;
+  top: 0.5em;
+  bottom: 0.5em;
+  left: -1.6em;
+  text-align: right;
+  overflow: hidden;
+  color: #666;
+  z-index: 1;
 }
