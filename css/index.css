@@ -1,14 +1,16 @@
 body {
-    font: normal 16px/1.8 "Segoe UI Light", "Lucida Grande", "Microsoft Jhenghei", "Microsoft Yahei";
+    font: normal 16px/1.8 "Segoe UI Light", "Lucida Grande", "Microsoft Jhenghei", "Microsoft Yahei", Arial, Helvetica, Sans-Serif;
     padding: 2em;
-    background: #444;
+    background: #f1f1f1;
+    color: #666;
 }
 h1, h2, h3 {
     font-weight: normal;
+    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue Light", "Microsoft Jhenghei", "Microsoft Yahei", Sans-Serif;
 }
 h1 {
     font-size: 400%;
-    margin: .3em 0;
+    margin: 0 0 .3em;
 }
 a {
     text-decoration: none;
@@ -17,25 +19,23 @@ a {
     margin: 0 auto;
     max-width: 1200px;
     min-height: 800px;
-    background: #f1f1f1;
-    padding: 2em 3em;
-    color: #666;
+    overflow: hidden;
 }
 .decks {
     overflow: hidden;
     *zoom: 1;
-    margin: 0;
+    margin: 0 -1.5em;
     padding: 0;
 }
 .decks .deck {
     float: left;
-    margin: 2em 2em 2em;
+    margin: 1.5em;
 }
 .deck {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 15em;
+    width: 14.5em;
     height: 12em;
     overflow: hidden;
     background: #333;
@@ -62,4 +62,29 @@ a {
 }
 .deck a:hover .subtitle {
     color: #fff;
+}
+.deck:nth-child(5n+1) {
+    background-color: #09c;
+}
+.deck:nth-child(5n+2) {
+    background-color: #93c;
+}
+.deck:nth-child(5n+3) {
+    background-color: #690;
+}
+.deck:nth-child(5n+4) {
+    background-color: #f80;
+}
+.deck:nth-child(5n) {
+    background-color: #c00;
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    body {padding: 1em;}
+    h1 {font-size: 200%;}
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .decks .deck {width: 33%}
 }

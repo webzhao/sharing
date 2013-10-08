@@ -10,15 +10,15 @@
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <style>
-.reveal [class^="icon-"],
-.reveal [class*=" icon-"] {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-}
+            .reveal [class^="icon-"],
+            .reveal [class*=" icon-"] {
+              font-family: FontAwesome;
+              font-weight: normal;
+              font-style: normal;
+              text-decoration: inherit;
+              -webkit-font-smoothing: antialiased;
+              *margin-right: .3em;
+            }
         </style>      
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -49,7 +49,7 @@
         /**
          * 启动slides
          */
-		function initSlides() {
+		function initReveal() {
 			Reveal.initialize({
 				controls: true,
 				progress: true,
@@ -82,6 +82,50 @@
             return marked(md, {gfm:false});
         };
 
+        /**
+         * init slide config
+         */
+        function initSlideConfig() {
+            var paragraphs = document.getElementsByTagName('p'),
+                p,
+                configs,
+                config,
+                configName,
+                text;
+            for (var i = 0, len = paragraphs.length; i < len; i++) {
+                p = paragraphs[i];
+                text = p.innerText;
+                if (!/^@\w+/.test(text)) { // not config statement
+                    continue;
+                }
+                configs = text.split(/ *, */);
+                for (var j = 0; j < configs.length; j++) {
+                    config = configs[j].split(/ *: */);
+                    configName = config[0].substr(1).replace(/^\w/, function(a){return a.toUpperCase()});
+                    window['config' + configName](p.parentNode, config[1]);
+                }
+                p.parentNode.removeChild(p);
+            }
+        }
+
+        /**
+         * config state (color)
+         */
+        function configState(slide, value) {
+            slide.setAttribute('data-state', value );
+        }
+
+        /**
+         * config fragment
+         */
+        function configFragment(slide, value) {
+            var items = slide.querySelectorAll('li, p');
+            items = [].slice.call(items);
+            items.forEach(function(item){
+                item.classList.add('fragment');
+            });
+        }
+
 
 		(function() {
 			var httpRequest = new XMLHttpRequest();
@@ -97,7 +141,8 @@
                     });
                     html = html.replace(/(<\/section>)?\s*$/, '</section>');
 					document.getElementById('slides').innerHTML = html;
-					initSlides();
+                    initSlideConfig();
+					initReveal();
 				}
 			};
             var match = /[?&]file=([\w\d-_\/~\.]+)/.exec(location.search);

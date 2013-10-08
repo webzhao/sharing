@@ -1,11 +1,3 @@
-<style>
-.reveal h1, .reveal h2, .reveal h3 {
-    margin-bottom: 1em;
-}
-.reveal p {
-    margin-bottom: 0.5em;
-}
-</style>
 
 # 探 索<br>![Node.js](img/node/nodejs.png "Node.js")</h1>
 ### 赵文博@奇舞团
