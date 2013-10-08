@@ -86,7 +86,7 @@
          * init slide config
          */
         function initSlideConfig() {
-            var paragraphs = document.getElementsByTagName('p'),
+            var paragraphs = [].slice.call(document.getElementsByTagName('p')),
                 p,
                 configs,
                 config,
@@ -94,7 +94,7 @@
                 text;
             for (var i = 0, len = paragraphs.length; i < len; i++) {
                 p = paragraphs[i];
-                text = p.innerText;
+                text = p.textContent || p.innerText;
                 if (!/^@\w+/.test(text)) { // not config statement
                     continue;
                 }
