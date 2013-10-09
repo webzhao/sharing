@@ -102,7 +102,7 @@
                 for (var j = 0; j < configs.length; j++) {
                     config = configs[j].split(/ *: */);
                     configName = config[0].substr(1).replace(/^\w/, function(a){return a.toUpperCase()});
-                    window['config' + configName](p.parentNode, config[1]);
+                    window['config' + configName](p.parentNode, config.slice(1).join(':'));
                 }
                 p.parentNode.removeChild(p);
             }
@@ -124,6 +124,24 @@
             items.forEach(function(item){
                 item.classList.add('fragment');
             });
+        }
+
+        /**
+         * config background image
+         */
+        function configBg(slide, value) {
+            var state = 'bg-' + Math.random().toString(36).substr(-6);
+            slide.setAttribute('data-state', state);
+            //add css rule
+            var stylesheet = document.styleSheets[document.styleSheets.length-1];
+            stylesheet.insertRule('.' + state + ' body {background-image:url(' + value + ')}', 1);
+        }
+
+        /**
+         * config state (color)
+         */
+        function configOffset(slide, value) {
+            slide.style.paddingLeft = value
         }
 
 

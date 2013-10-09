@@ -203,6 +203,19 @@ body {
     background-position: center center!important;
 }
 
+[class^="bg-"] .present {
+    text-align: left;
+}
+
+[class^="bg-"] .present h1,
+[class^="bg-"] .present h2, 
+[class^="bg-"] .present h3, 
+[class^="bg-"] .present h4, 
+[class^="bg-"] .present li,
+[class^="bg-"] .present p {
+    text-shadow: 1px 1px 1px #000, 0 0 0.3em #000;
+}
+
 /*********************************************
  * code
  *********************************************/
@@ -223,6 +236,8 @@ body {
 }
 .reveal blockquote {
     text-align: left;
+    width: 80%;
+    padding: 0.5em;
 }
 .reveal .masked {
     background: #000;

@@ -29,7 +29,29 @@
 
 ---
 
-## 什么好的设计？
+## 环境设计
+
+* 建築設計
+* 室內設計
+* 景觀設計
+
+@bg: http://farm4.staticflickr.com/3339/3328279218_ca45ae7903_b.jpg, @fragment, @offset: 2em
+
+---
+
+## 工业设计（Industrial Design）
+
+---
+
+## 视觉传达设计（Visual Design）
+
+---
+
+## 流行时尚设计（Visual Design）
+
+---
+
+## 什么是好的设计？
 
 ---
 
@@ -40,8 +62,19 @@
 ## 简单(Simplicity)
 
 > True simplicity is derived from so much more than just the absences of clutter or ornamentation. It’s about bringing order to complexity.
+>  
+> -- Jony Ive
 
-- Jony Ive
+---
+
+## 
+
+
+
+
+
+
+
 
 
 
