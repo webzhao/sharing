@@ -138,6 +138,14 @@
         }
 
         /**
+         * config color
+         */
+        function configColor(slide, value) {
+            slide.style.color = value;
+            slide.querySelector('h1,h2,h3').style.color = value;
+        }
+
+        /**
          * config offsetX
          */
         function configOffsetX(slide, value) {

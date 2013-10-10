@@ -35,17 +35,27 @@
 * 室内设计
 * 景观设计
 
-@bg: http://farm1.staticflickr.com/219/499264019_ab86676dbd_b.jpg, @fragment, @offsetX: 2em, @offsetY: -3em
+@bg: http://farm1.staticflickr.com/219/499264019_ab86676dbd_b.jpg, @fragment, @offsetX: 55%, @offsetY: -1em
 
 ---
 
 ## 工业设计
 
-* 
+* 产品设计
+* 软件设计
+* 家具设计
+
+@bg: http://farm9.staticflickr.com/8173/8015604005_6ddf3b9dce_b.jpg, @fragment, @offsetX: 60%, @offsetY: -3em
 
 ---
 
-## 视觉传达设计（Visual Design）
+## 视觉传达设计
+
+* 广告设计
+* 插画设计
+* 网页设计
+
+@bg: http://farm4.staticflickr.com/3138/3022778760_e7091b7252_o.jpg, @fragment, @offsetX: 12%, @offsetY: -1em, @color: #333
 
 ---
 
