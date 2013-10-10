@@ -138,10 +138,17 @@
         }
 
         /**
-         * config state (color)
+         * config offsetX
          */
-        function configOffset(slide, value) {
+        function configOffsetX(slide, value) {
             slide.style.paddingLeft = value
+        }
+
+        /**
+         * config offsetY
+         */
+        function configOffsetY(slide, value) {
+            slide.querySelector('*:first-child').style.marginTop = value
         }
 
 

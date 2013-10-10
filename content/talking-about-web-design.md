@@ -31,15 +31,17 @@
 
 ## 环境设计
 
-* 建築設計
-* 室內設計
-* 景觀設計
+* 建筑设计
+* 室内设计
+* 景观设计
 
-@bg: http://farm4.staticflickr.com/3339/3328279218_ca45ae7903_b.jpg, @fragment, @offset: 2em
+@bg: http://farm1.staticflickr.com/219/499264019_ab86676dbd_b.jpg, @fragment, @offsetX: 2em, @offsetY: -3em
 
 ---
 
-## 工业设计（Industrial Design）
+## 工业设计
+
+* 
 
 ---
 
@@ -67,7 +69,9 @@
 
 ---
 
-## 
+## 参考文档
+
+* <http://en.wikipedia.org/wiki/Design>
 
 
 
