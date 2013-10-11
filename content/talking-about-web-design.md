@@ -33,11 +33,13 @@
 
 > 设计是有目标和计划的创作行为，介于艺术和科学之间。
 > 
-> --Wikipedia
+> -- Wikipedia
 
 ---
 
+> Design is not just what it looks like and feels like. Design is how it works.
 > 
+> -- Steve Jobs
 
 ---
 
@@ -48,6 +50,10 @@
 * 工业设计
 * 流行时尚设计
 * 视觉传达设计
+
+	* 广告设计
+	* 插画设计
+	* 网页设计
 
 @bg: http://farm1.staticflickr.com/219/499264019_ab86676dbd_b.jpg, @fragment, @offsetX: 55%, @offsetY: -1em
 
