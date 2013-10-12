@@ -171,28 +171,31 @@ body {
  * states
  *********************************************/
 .blue body {
-    background: #09c;
+    background-color: #09c;
 }
 .purple body {
-    background: #93c;
+    background-color: #93c;
 }
 .green body {
-    background: #690;
+    background-color: #690;
 }
 .orange body {
-    background: #f80;
+    background-color: #f80;
 }
 .red body {
-    background: #f44;
+    background-color: #f44;
 }
 .white body {
-    background: #eee;
+    background-color: #fff;
+}
+.light body {
+    background-color: #eee;
 }
 .gray body {
-    background: #ccc;
+    background-color: #ccc;
 }
 .dark body {
-    background: #666;
+    background-color: #666;
 }
 /*********************************************
  * background image

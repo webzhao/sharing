@@ -1,4 +1,4 @@
-# 闲话网站设计
+# 闲话网页设计
 ### &nbsp;
 ### 赵文博@奇舞团
 
@@ -61,15 +61,107 @@
 
 ## 什么是好的设计？
 
+@fragment
+
+Dieter Rams的十条标准
+
 ---
 
-## 
+![Dieter Rams](http://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Designer-Dieter_Rams-at-Vits%C5%93.jpg/480px-Designer-Dieter_Rams-at-Vits%C5%93.jpg)
+
+Dieter Rams
+
+---
+
+@state: white
+
+<table width="100%">
+    <tr>
+        <td style="text-align:center;color:#333"><img src="img/design/braun_t3.jpg"><br>Braun T3 Radio<br>Dieter Rams, 1958</td>
+        <td style="text-align:center;color:#333" class="fragment"><img src="img/design/ipod1.jpg"><br>Apple iPod<br>Jony Ive, 2001</td>
+    </tr>
+</table>
+
+---
+
+@bg: img/design/braun_vs_apple.png, @bgColor: #fff
+
+---
+
+<table width="100%" class="good-design">
+    <tr>
+        <td class="fragment">
+            <i class="icon-lightbulb"></i>
+            innovative<br>
+            创新的
+        </td>
+        <td class="fragment">
+            <i class="icon-wrench"></i>
+            useful<br>
+            有用的
+        </td>
+        <td class="fragment">
+            <i class="icon-picture"></i>
+            aesthetic<br>
+            美的
+        </td>
+        <td class="fragment">
+            <i class="icon-comments"></i>
+            understandable<br>
+            可理解的
+        </td>
+    </tr>
+    <tr>
+        <td class="fragment">
+            <i class="icon-sun"></i>
+            unobtrusive<br>
+            不张扬的
+        </td>
+        <td class="fragment">
+            <i class="icon-book"></i>
+            honest<br>
+            诚实的
+        </td>
+        <td class="fragment">
+            <i class="icon-time"></i>
+            long-lasting<br>
+            持久的
+        </td>
+        <td class="fragment">
+            <i class="icon-list"></i>
+            thorough<br>
+            周到的
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="fragment">
+            <i class="icon-globe"></i>
+            environmentally friendly<br>
+            环保的
+        </td>
+        <td colspan="2" class="fragment">
+            <i class="icon-xxx">&nbsp;</i>
+            as little design as possible<br>
+            尽可能少的设计
+        </td>
+    </tr>
+</table>
+
+---
+
+## 让我们回到网页设计
+
+---
+
+## 网页设计的基本要素
+
+
 
 ---
 
 ## 简单(Simplicity)
 
-> True simplicity is derived from so much more than just the absences of clutter or ornamentation. It’s about bringing order to complexity.
+> True simplicity is derived from so much more than just the absences of clutter or ornamentation. It's about bringing order to complexity.
 >  
 > -- Jony Ive
 
@@ -89,11 +181,9 @@
 
 
 <style type="text/css">
-.reveal a:not(.image) {
-	color: #ccc;
-	color: rgba(255,255,255,0.8);
-}
-.reveal a:not(.image):hover {
-	color: #fff;
-}
+.reveal a:not(.image) { color: #ccc; color: rgba(255,255,255,0.8); }
+.reveal a:not(.image):hover { color: #fff; }
+.reveal .good-design {margin-top:1em;font-size:80%;}
+.good-design tr td {text-align: center; height: 9.5em}
+.good-design tr td i {font-size: 400%;display: block;text-align:center;margin-bottom: 0.4em;color:#9c0}
 </style>

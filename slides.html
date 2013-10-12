@@ -130,11 +130,22 @@
          * config background image
          */
         function configBg(slide, value) {
-            var state = 'bg-' + Math.random().toString(36).substr(-6);
+            var state = slide.getAttribute('data-state') || ('bg-' + Math.random().toString(36).substr(-6));
             slide.setAttribute('data-state', state);
             //add css rule
             var stylesheet = document.styleSheets[document.styleSheets.length-1];
             stylesheet.insertRule('.' + state + ' body {background-image:url(' + value + ')}', 1);
+        }
+
+        /**
+         * config background color
+         */
+        function configBgColor(slide, value) {
+            var state = slide.getAttribute('data-state') || ('bg-' + Math.random().toString(36).substr(-6));
+            slide.setAttribute('data-state', state);
+            //add css rule
+            var stylesheet = document.styleSheets[document.styleSheets.length-1];
+            stylesheet.insertRule('.' + state + ' body {background-color:' + value + '}', 1);
         }
 
         /**
