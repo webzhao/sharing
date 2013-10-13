@@ -197,6 +197,16 @@ body {
 .dark body {
     background-color: #666;
 }
+.white .reveal, .light .reveal,
+.white .reveal h1,
+.white .reveal h2,
+.white .reveal h3,
+.light .reveal h1,
+.light .reveal h2,
+.light .reveal h3 {
+    color: #333;
+}
+
 /*********************************************
  * background image
  *********************************************/
