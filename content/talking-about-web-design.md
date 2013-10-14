@@ -392,23 +392,162 @@ Dieter Rams
 
 ---
 
+@fragment
+
 ## 视觉层次 Visual hierarchy
 
-* 对齐
-* 分组
-* 对比
-* 留白
+* 对齐 Alignment
+* 分组 Proximity
+* 留白 Whitespace
+* 对比 Contrast
 
 ---
 
-## 原则
+<style>
+.google_wrong body {background:url(img/design/google_wrong.png) no-repeat 0 0; background-size:contain}
+.google_correct body {background:url(img/design/google_correct.png) no-repeat 0 0; background-size:contain}
+.google_marked body {background:url(img/design/google_marked.png) no-repeat 0 0; background-size:contain}
+.smashing_wrong body {background:url(img/design/smashing_wrong.png) no-repeat 0 0; background-size:contain}
+.smashing_correct body {background:url(img/design/smashing_correct.png) no-repeat 0 0; background-size:contain}
+</style>
 
-* 一致性
-* 简单
+@state: google_wrong
 
 ---
 
-## 一致性(Consistency)
+@state: google_correct
+
+---
+
+@state: google_marked
+
+---
+
+对齐带来秩序。人的眼睛是喜欢秩序的，对齐让人觉得愉悦。
+
+---
+
+@state: smashing_wrong
+
+---
+
+@state: smashing_correct
+
+---
+
+分组带来逻辑和层次。
+
+---
+
+![ws](http://d.alistapart.com/whitespace/figure3_luxury_direct.jpg)
+
+---
+
+![apple](img/design/apple.png)
+
+---
+
+![360safe](img/design/360safe.png)
+
+---
+
+留白让阅读更有节奏。
+
+---
+
+<div style="width:40em;font-size:60%; padding:2em;text-align:left;margin:0 auto;background:#ddd;color:#111">
+    <div style="font-size:110%">White Space and Simplicity: An Overview</div>
+    <div style="margin-top:0.5em">By Vitaly Friedman</div>
+    <div style="margin-top:0.5em;line-height:1.6">Last year we’ve seen a lot of simple, even minimalistic designs, which impress not with the amount of presented information but with the way the information is actually presented. Complex layouts are giving way to simple 2-col- or 3-col layouts, which usually have large amount of white space without any content whatsoever.</div>
+</div>
+
+---
+
+<div style="width:40em;font-size:60%; padding:2em;text-align:left;margin:0 auto;background:#ddd;color:#111">
+    <div style="font-size:200%;line-height:1.4">White Space and Simplicity: An Overview</div>
+    <div style="margin-top:0.5em;font-size:85%">By Vitaly Friedman</div>
+    <div style="margin-top:0.5em;line-height:1.6">Last year we’ve seen a lot of simple, even minimalistic designs, which impress not with the amount of presented information but with the way the information is actually presented. Complex layouts are giving way to simple 2-col- or 3-col layouts, which usually have large amount of white space without any content whatsoever.</div>
+</div>
+
+---
+
+<div style="width:40em;font-size:60%; padding:2em;text-align:left;margin:0 auto;background:#ddd;color:#111">
+    <div style="font-size:120%;line-height:1.5;color:#09c;font-weight:bold">White Space and Simplicity: An Overview</div>
+    <div style="margin-top:0.5em;color:#999">By Vitaly Friedman</div>
+    <div style="margin-top:0.5em;line-height:1.6">Last year we’ve seen a lot of simple, even minimalistic designs, which impress not with the amount of presented information but with the way the information is actually presented. Complex layouts are giving way to simple 2-col- or 3-col layouts, which usually have large amount of white space without any content whatsoever.</div>
+</div>
+
+---
+
+<div style="width:40em;font-size:60%; padding:2em;text-align:left;margin:0 auto;background:#ddd;color:#111;overflow:hidden">
+    <div style="font-size:100%;line-height:1.5;font-weight:bold;padding:1em 2em;margin:-2em -2em 0;background:#09c;color:#fff">White Space and Simplicity: An Overview</div>
+    <div style="margin-top:0.5em;color:#999">By Vitaly Friedman</div>
+    <div style="margin-top:0.5em;line-height:1.6">Last year we’ve seen a lot of simple, even minimalistic designs, which impress not with the amount of presented information but with the way the information is actually presented. Complex layouts are giving way to simple 2-col- or 3-col layouts, which usually have large amount of white space without any content whatsoever.</div>
+</div>
+
+---
+
+对比体现出主次。
+
+---
+
+## 视觉修饰
+
+* 图标 Icon
+* 纹理 Texture
+
+---
+
+## 图标
+
+* 尽量使用几何形状
+
+<div style="margin-top:1em">
+<video preload poster="http://movies.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/icondraw/icondraw_posterframe.jpg" style="width:376px;height:376px;" src="http://movies.apple.com/media/us/ios/2013/c9d61301_0529_4348_aaa2_0e0689ee3551/icondraw/icondraw.mp4" controls></video>
+</div>
+
+---
+
+@state: white
+
+![google principle](img/design/google_principle.png)
+
+[Google Visual Assets Guidelines](http://www.behance.net/gallery/Google-Visual-Assets-Guidelines-Part-2/9084309)
+
+---
+
+## 纹理
+
+增加质感
+
+---
+
+@bg: img/design/texture1.png
+
+---
+
+@bg: img/design/texture2.png
+
+---
+
+## 设计原则
+
+* 一致性 Consistency
+* 简单 Simplicity
+
+---
+
+## 一致性
+
+降低用户学习成本。
+
+---
+
+![plus](img/design/plus.png)
+
+---
+
+![drive](img/design/drive.png)
 
 ---
 
@@ -420,6 +559,113 @@ Dieter Rams
 
 ---
 
+> A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
+> 
+> -- Antoine De Saint-Exupery
+
+---
+
+## Skeuomorphism vs Flat
+
+![ios6vsios7](http://iosguides.net/wp-content/uploads/2013/06/Notes-App-Comparisons.jpg)
+
+---
+
+![twitter](http://24.media.tumblr.com/f7fd807172e0de4a5c668ab824701c29/tumblr_mp17paOWX21sxe2xio1_1280.png)
+
+---
+
+![facebook](http://31.media.tumblr.com/890d7c94c79fb15a52c114d4ac8cbb87/tumblr_mp4m9sQcXz1sxe2xio1_1280.png)
+
+---
+
+## 总结一下
+
+---
+
+* 什么是设计
+* 什么是好的设计
+* 网页设计的基本要素
+
+    * 文字排版
+    * 颜色
+    * 视觉层次
+
+* 视觉修饰
+
+    * 图标
+    * 纹理
+
+* 设计原则
+    
+    * 一致性
+    * 简单
+---
+
+![draw](http://static.fjcdn.com/pictures/How_e730a5_900149.jpg)
+
+---
+
+## 资源和工具
+
+---
+
+## 学习设计
+
+* [Hack Design](http://www.hackdesign.org/)
+* [《给大家看的设计师》](http://book.douban.com/subject/3323633/)
+
+---
+
+## 参考别人的设计
+
+* [Dribbble](http://dribbble.com/)
+* [Behance](http://www.behance.net/)
+* [Pinterest](http://www.pintrest.com/)
+* [Tumblr](https://www.tumblr.com/)
+
+---
+
+## 配色工具
+
+* [Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)
+* [Color Calculator](http://www.sessions.edu/color-calculator)
+* [Colour Lovers](http://www.colourlovers.com/)
+* [Color Scheme Designer](http://colorschemedesigner.com/)
+* [Design Seeds](http://design-seeds.com/)
+
+---
+
+## 从哪儿找图标
+
+* [Icon Finder](https://www.iconfinder.com/)
+* [iconlet](http://www.iconlet.com/)
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+* [Icon Moon](http://icomoon.io/)
+
+---
+
+## 纹理
+
+* [Subtle Patterns](http://subtlepatterns.com/)
+* [Noise Texture Generator](http://www.noisetexturegenerator.com/)
+
+---
+
+@state: blue
+
+## 谢谢大家！
+
+<p style="font-size:6em"><i class="icon-smile"></i></p>
+
+---
+
+@state: green
+
+<p style="font-size:6em"><i class="icon-comments"></i></p>
+
+---
+
 ## 参考文档
 
 * <http://en.wikipedia.org/wiki/Design>
@@ -428,6 +674,8 @@ Dieter Rams
 * <http://typo.sofish.de/>
 * <http://coding.smashingmagazine.com/2009/04/03/8-simple-ways-to-improve-typography-in-your-designs/>
 * <http://www.pearsonified.com/2011/12/golden-ratio-typography.php>
+* <http://blog.formedfunction.com/post/3029763425/on-visual-hierarchy>
+* <http://webdesign.tutsplus.com/articles/design-theory/understanding-visual-hierarchy-in-web-design/>
 
 
 
@@ -439,7 +687,7 @@ Dieter Rams
 
 
 <style type="text/css">
-
+.reveal img {max-width:100%;}
 .reveal a:not(.image) { color: #ccc; color: rgba(255,255,255,0.8); }
 .reveal a:not(.image):hover { color: #fff; }
 .reveal .good-design {margin-top:1em;font-size:80%;}
