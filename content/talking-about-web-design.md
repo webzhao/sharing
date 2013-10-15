@@ -613,7 +613,7 @@ Dieter Rams
 ## 学习设计
 
 * [Hack Design](http://www.hackdesign.org/)
-* [《给大家看的设计师》](http://book.douban.com/subject/3323633/)
+* [《给大家看的设计书》](http://book.douban.com/subject/3323633/)
 
 ---
 
