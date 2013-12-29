@@ -12,10 +12,10 @@
 * 奇舞团前端工程师
 * 在做联盟和CRM
 <p style="font-size:120%;margin-top:0.5em">
-	<a href="https://github.com/webzhao" target="_blank" title="Github"><i class="icon-github"></i></a>&nbsp;
-	<a href="http://www.flickr.com/photos/53827079@N06/" target="_blank" title="Flickr"><i class="icon-flickr"></i></a>&nbsp;
-	<a href="https://twitter.com/webzhao" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>&nbsp;
-	<a href="http://cn.linkedin.com/pub/wenbo-zhao/29/7b1/514" target="_blank" title="Linkedin"><i class="icon-linkedin"></i></a>&nbsp;
+	<a href="https://github.com/webzhao" target="_blank" title="Github"><i class="fa-github"></i></a>&nbsp;
+	<a href="http://www.flickr.com/photos/53827079@N06/" target="_blank" title="Flickr"><i class="fa-flickr"></i></a>&nbsp;
+	<a href="https://twitter.com/webzhao" target="_blank" title="Twitter"><i class="fa-twitter"></i></a>&nbsp;
+	<a href="http://cn.linkedin.com/pub/wenbo-zhao/29/7b1/514" target="_blank" title="Linkedin"><i class="fa-linkedin"></i></a>&nbsp;
 </p>
 
 ---
@@ -91,56 +91,56 @@ Dieter Rams
 <table width="100%" class="good-design">
     <tr>
         <td class="fragment">
-            <i class="icon-lightbulb"></i>
+            <i class="fa-lightbulb"></i>
             innovative<br>
             创新的
         </td>
         <td class="fragment">
-            <i class="icon-wrench"></i>
+            <i class="fa-wrench"></i>
             useful<br>
             有用的
         </td>
         <td class="fragment">
-            <i class="icon-picture"></i>
+            <i class="fa-picture"></i>
             aesthetic<br>
             美的
         </td>
         <td class="fragment">
-            <i class="icon-comments"></i>
+            <i class="fa-comments"></i>
             understandable<br>
             可理解的
         </td>
     </tr>
     <tr>
         <td class="fragment">
-            <i class="icon-sun"></i>
+            <i class="fa-sun"></i>
             unobtrusive<br>
             不张扬的
         </td>
         <td class="fragment">
-            <i class="icon-book"></i>
+            <i class="fa-book"></i>
             honest<br>
             诚实的
         </td>
         <td class="fragment">
-            <i class="icon-time"></i>
+            <i class="fa-time"></i>
             long-lasting<br>
             持久的
         </td>
         <td class="fragment">
-            <i class="icon-list"></i>
+            <i class="fa-list"></i>
             thorough<br>
             周到的
         </td>
     </tr>
     <tr>
         <td colspan="2" class="fragment">
-            <i class="icon-globe"></i>
+            <i class="fa-globe"></i>
             environmentally friendly<br>
             环保的
         </td>
         <td colspan="2" class="fragment">
-            <i class="icon-xxx">&nbsp;</i>
+            <i class="fa-xxx">&nbsp;</i>
             as little design as possible<br>
             尽可能少的设计
         </td>
@@ -219,7 +219,7 @@ Dieter Rams
 <p style="width:15em;line-height:1.5">設計界因歐美國家發展理論歷史悠久，故設計史和设计艺术学相關理論，常以歐美的工業設計，建築設計為兩大主流。由於設計行為一般都解釋為有明確目標的，因此在近代將與設計意涵相反的創作，稱為亂數、隨機等等。</p>
 <p style="line-height:1.5;margin-top:3em">所謂設計，即「设想和计划，设想是目的，计划是过程安排」，通常指有目標和計劃的創作行為、活动。原意是“设置摆放其元素，并计量评估其效用”，现代通常指预先描绘出工作结果的样式、结构及形貌，通常要绘制图样。设计现在在服饰、建筑、工程项目、产品开发以及艺术等领域起着重要的作用。</p>
 <p style="width:40em;line-height:1.5;margin-top:3em">最簡單的關於設計的定義，就是一種有目的的創作行為。同時設計的過程是要經歷情報的收集及分析。再將不同的情報築起一件作品。故設計又可以叫作情報的建築。然而設計也是一種職業。例如在電影業中有場景設計一職。而由設計這個字沿伸出來有相當多的理論和議題，以設計為職業的社會環境通常就叫做設計界。</p>
-<p style="position:absolute;bottom:-1em;left:42em;"><i class="icon-ok" style="font-size:10em;color:#9c0"></i></p>
+<p style="position:absolute;bottom:-1em;left:42em;"><i class="fa-ok" style="font-size:10em;color:#9c0"></i></p>
 </div>
 
 ---
@@ -237,7 +237,7 @@ Dieter Rams
 <p style="width:40em;line-height:1.2;">設計界因歐美國家發展理論歷史悠久，故設計史和设计艺术学相關理論，常以歐美的工業設計，建築設計為兩大主流。由於設計行為一般都解釋為有明確目標的，因此在近代將與設計意涵相反的創作，稱為亂數、隨機等等。( line-height: 1.2 )</p>
 <p style="width:40em;line-height:2;margin-top:3em">所謂設計，即「设想和计划，设想是目的，计划是过程安排」，通常指有目標和計劃的創作行為、活动。原意是“设置摆放其元素，并计量评估其效用”，现代通常指预先描绘出工作结果的样式、结构及形貌，通常要绘制图样。设计现在在服饰、建筑、工程项目、产品开发以及艺术等领域起着重要的作用。( line-height: 2 )</p>
 <p style="width:40em;line-height:1.6;margin-top:3em">最簡單的關於設計的定義，就是一種有目的的創作行為。同時設計的過程是要經歷情報的收集及分析。再將不同的情報築起一件作品。故設計又可以叫作情報的建築。然而設計也是一種職業。例如在電影業中有場景設計一職。而由設計這個字沿伸出來有相當多的理論和議題，以設計為職業的社會環境通常就叫做設計界。( line-height: 1.6 ≈ φ )</p>
-<p style="position:absolute;bottom:-1em;right:2em;"><i class="icon-ok" style="font-size:10em;color:#9c0"></i></p>
+<p style="position:absolute;bottom:-1em;right:2em;"><i class="fa-ok" style="font-size:10em;color:#9c0"></i></p>
 </div>
 
 ---
@@ -613,7 +613,7 @@ Dieter Rams
 ## 学习设计
 
 * [Hack Design](http://www.hackdesign.org/)
-* [《给大家看的设计师》](http://book.douban.com/subject/3323633/)
+* [《给大家看的设计书》](http://book.douban.com/subject/3323633/)
 
 ---
 
@@ -656,13 +656,13 @@ Dieter Rams
 
 ## 谢谢大家！
 
-<p style="font-size:6em"><i class="icon-smile"></i></p>
+<p style="font-size:6em"><i class="fa-smile"></i></p>
 
 ---
 
 @state: green
 
-<p style="font-size:6em"><i class="icon-comments"></i></p>
+<p style="font-size:6em"><i class="fa-comments"></i></p>
 
 ---
 

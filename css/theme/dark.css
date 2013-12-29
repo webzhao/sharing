@@ -9,6 +9,7 @@
 body {
     background: #111111;
     background-color: #111111;
+    background-repeat: no-repeat;
     transition: background 0.5s ease-in!important;
 }
 
@@ -189,7 +190,7 @@ body {
     background-color: #fff;
 }
 .light body {
-    background-color: #eee;
+    background-color: #eaeaea;
 }
 .gray body {
     background-color: #ccc;
@@ -241,10 +242,20 @@ body {
     line-height: 1.25;
     font-family: Consolas;
     margin: 1em auto;
+    position: relative;
 }
 .reveal pre code {
     font-family: Consolas;
-    padding: .5em;
+    padding: 0;
+}
+.reveal .run-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #7BB800;
+    cursor: pointer;
+    border-radius: 0 0 0 0.3em;
 }
 
 .reveal em {
