@@ -23,6 +23,14 @@
 
 ---
 
+@state: white
+
+## 每天陪伴我们的调试工具，你真的了解它吗？
+
+<img src="img/devtools/chrome_start.jpg">
+
+---
+
 ## console
 
 ---
@@ -57,6 +65,57 @@ console.log(
 
 ---
 
+## 分组
+
+```javascript
+console.group('分组1');
+console.log('item 1');
+console.log('item 2');
+console.log('item 3');
+console.groupEnd();
+```
+
+---
+
+## 输出表格
+
+```javascript
+var list = [
+    {
+        title: '360导航',
+        url: 'http://www.3600.com',
+        color: '#44f'
+    },
+    {
+        title: '360搜索',
+        url: 'http://www.so.com'
+    }
+];
+console.log(list);
+console.table(list);
+```
+
+---
+
+## 计数器
+
+```javascript
+function tossCoin() {
+    console.count('抛硬币');
+    if (Math.random() > 0.5) {
+        console.count('正面');
+    } else {
+        console.count('反面');
+    }
+}
+var i = 0;
+while (i++ < 100) {
+    tossCoin();
+}
+```
+
+---
+
 ## 用console来计时
 
 ```javascript
@@ -79,19 +138,138 @@ $x('/html/body/script') // xpath
 
 ---
 
+## 复制到剪贴板
+
 ```javascript
 var obj = {x:1, y:2};
 copy(obj);
 ```
 
-
 ---
 
+## 快捷引用
+
+```javascript
+document.querySelector('a');
+$_.href;
+$0;  // 最后一次选中的DOM元素
+$1;  // 倒数第二次选中的DOM元素
+```
+
+---
+XHR
 ## console就到这里吧
 
 ```javascript
 console.clear();
 ```
+
+---
+
+## Inspector
+
+---
+
+## 快速修改数字
+
+| 数值改变      | 操作        |
+| ------------- |:-------------:|
+| ±1           | ↑/↓ |
+| ±10          | Shift + ↑/↓ |
+| ±0.1         | Alt + ↑/↓  |
+| ±10          | Shift + ↑/↓ |
+| ±100         | Shift + PgUp/PgDown |
+
+
+---
+
+### 拖拽修改DOM树
+
+---
+
+### 修改hover/focus/visited样式
+
+<a href="#">这是一个链接</a>
+<input type="text">
+
+---
+
+## debugging
+
+---
+
+## 在代码中设置断点
+
+```javascript
+function add(a, b) {
+    debugger;
+    return a + b;
+}
+add(Math.random(), 75);
+```
+
+---
+
+## 设置中断条件
+
+```javascript
+var i = 0, value;
+while (i++ < 100) {
+    value = Math.random();
+    console.log(value);
+}
+```
+---
+
+## XHR断点
+
+<a href="/sharing/demos/devtools/conditional.html" target="_blank">Demo</a>
+
+---
+
+## DOM断点
+
+<a href="/sharing/demos/devtools/dom_breakpoint.html" target="_blank">Demo</a>
+
+---
+
+## XHR断点
+
+<a href="/sharing/demos/devtools/xhr.html" target="_blank">Demo</a>
+
+---
+
+## 格式化代码
+
+---
+
+## Source Map
+
+<a href="/sharing/demos/devtools/source_map.html" target="_blank">Demo</a>
+
+---
+
+## LESS/SASS
+
+<a href="/sharing/demos/devtools/sass.html" target="_blank">Demo</a>
+
+---
+
+## Canvas调试
+
+
+
+---
+
+## workspace
+
+---
+
+@state: white
+
+## Happy coding!
+
+<img src="img/devtools/chrome_end.jpg">
 
 ---
 
@@ -113,7 +291,7 @@ console.clear();
 
 * [Secrets of the Browser Developer Tools](http://devtoolsecrets.com/)
 * [Chrome DevTools](https://developers.google.com/chrome-developer-tools/)
-* [Hacking Chrome DevTools](https://medium.com/p/8c8896f5cef3)
+* [JavaScript Source Map 详解](http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html)
 
 
 
@@ -124,4 +302,6 @@ console.clear();
 .reveal a:not(.image) { color: #ccc; color: rgba(255,255,255,0.8); }
 .reveal a:not(.image):hover { color: #fff; }
 .reveal .overlay {display:inline-block;width:auto;background:rgba(0,0,0,0.5);padding:0.5em 1em;margin:0;line-height:1.6;font-size:1.5em}
+.reveal table {margin: 0 auto}
+.reveal table td, .reveal table th {padding: 0.3em 1em}
 </style>
