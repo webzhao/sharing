@@ -64,7 +64,20 @@ box-sizing: content-box | padding-box | border-box
 
 ---
 
-## [Demo](http://dabblet.com/gist/de697755292033c055e8)
+* [Demo 1: 全屏页面和自适应表单](http://dabblet.com/gist/de697755292033c055e8)
+* [Demo 2: 自适应栅格](http://codepen.io/jason-kinney/pen/cKgzi?editors=110)
+
+---
+
+### Bootstrap、Pure、Foundation大量使用
+
+```css
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+```
 
 ---
 
@@ -84,21 +97,199 @@ box-sizing: content-box | padding-box | border-box
 
 ## display: table
 
----
+@fragment, @state: orange
 
-## flex-box
-
----
-
-## multicolumn
+CSS 2.1
 
 ---
 
-## gird layout
+```css
+display: table                /* <table>     */
+display: table-cell           /* <td>        */
+display: table-row            /* <tr>        */
+display: table-column         /* <col>       */
+display: table-column-group   /* <colgroup>  */
+display: table-footer-group   /* <tfoot>     */
+display: table-header-group   /* <thead>     */
+```
 
 ---
 
-## css shape
+## 使用表格布局的优点
+
+* 简洁灵活的多栏布局
+* 简单的等高解决方案
+* 简单的垂直居中
+* 防止一行内的元素折行
+
+---
+
+* [Demo 1: 多栏布局](http://dabblet.com/gist/372edba1af0c2ef44adf)
+* [Demo 2: 强制一行显示](http://dabblet.com/gist/a8823614dc5cfd0f7394)
+* [Demo 3: 垂直居中](http://dabblet.com/gist/2528b21a7867023c2fed)
+
+---
+
+## display: table 浏览器支持
+
+<ul class="browser-support">
+    <li><img src="img/css3/ie.png" alt="IE">8+</li>
+    <li><img src="img/css3/firefox.png" alt="Firefox"></li>
+    <li><img src="img/css3/chrome.png" alt="Chrome"></li>
+    <li><img src="img/css3/opera.png" alt="Opera">7.0+</li>
+    <li><img src="img/css3/safari.png" alt="Safari"></li>
+    <li><img src="img/css3/ios.png" alt="iOS"></li>
+    <li><img src="img/css3/android.png" alt="Android"></li>
+<ul>
+
+---
+
+@state: purple
+
+## flexbox
+
+---
+
+Flexbox可控制容器内的子元素：
+
+* 水平或垂直排成一行
+* 控制子元素对齐方式
+* 控制子元素的宽度/高度
+* 控制子元素显示顺序
+* 控制子元素是否折行
+
+---
+
+Flexbox是W3C布局方面标准中的*终极武器*
+
+---
+
+![axis](img/css3/axis.png)
+
+---
+
+[Flexbox Demo](http://dabblet.com/gist/95e5b65622aeae4d031d)
+
+---
+
+## 新旧标准
+
+* 2009年语法
+* 2012年语法
+
+---
+
+```css
+.container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+}
+```
+
+---
+
+## Flexbox浏览器支持(2009标准)
+
+<ul class="browser-support">
+    <li><img src="img/css3/ie.png" alt="IE">10+</li>
+    <li><img src="img/css3/firefox.png" alt="Firefox"></li>
+    <li><img src="img/css3/chrome.png" alt="Chrome"></li>
+    <li><img src="img/css3/opera.png" alt="Opera">12.1+</li>
+    <li><img src="img/css3/safari.png" alt="Safari"></li>
+    <li><img src="img/css3/ios.png" alt="iOS"></li>
+    <li><img src="img/css3/android.png" alt="Android">2.1+</li>
+<ul>
+
+---
+
+## Flexbox浏览器支持(2012标准)
+
+<ul class="browser-support">
+    <li><img src="img/css3/ie.png" alt="IE">11+</li>
+    <li><img src="img/css3/firefox.png" alt="Firefox">22+</li>
+    <li><img src="img/css3/chrome.png" alt="Chrome">21+</li>
+    <li><img src="img/css3/opera.png" alt="Opera">12.1+</li>
+    <li><img src="img/css3/safari.png" alt="Safari">6.1+</li>
+    <li><img src="img/css3/ios.png" alt="iOS">7.0+</li>
+    <li><img src="img/css3/android.png" alt="Android">4.4+</li>
+<ul>
+
+---
+
+@state: purple
+
+# Multi-column Layout
+
+---
+
+主要解决文字内容的多列展示，实现报纸杂志效果。
+
+---
+
+[Demo](http://dabblet.com/gist/1e98898598d536015362)
+
+---
+
+## 多列显示浏览器支持
+
+<ul class="browser-support">
+    <li><img src="img/css3/ie.png" alt="IE">10+</li>
+    <li><img src="img/css3/firefox.png" alt="Firefox"></li>
+    <li><img src="img/css3/chrome.png" alt="Chrome"></li>
+    <li><img src="img/css3/opera.png" alt="Opera">11.1+</li>
+    <li><img src="img/css3/safari.png" alt="Safari"></li>
+    <li><img src="img/css3/ios.png" alt="iOS"></li>
+    <li><img src="img/css3/android.png" alt="Android"></li>
+<ul>
+
+---
+
+### CSS Region
+
+---
+
+让内容依次流入不同的容器。
+
+![region](img/css3/region.png)
+
+---
+
+[Demo](http://adobe-webplatform.github.io/road-trip/)
+
+---
+
+## CSS Region浏览器支持
+
+<ul class="browser-support">
+    <li><img src="img/css3/ie.png" alt="IE">10+</li>
+    <li><img src="img/css3/safari.png" alt="Safari">6.1+</li>
+    <li><img src="img/css3/ios.png" alt="iOS">7.1+</li>
+<ul>
+
+---
+
+## CSS Shapes
+
+---
+
+让内容在各种形状的容器内显示。
+
+---
+
+
+
 
 
 <style type="text/css">
