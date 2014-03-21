@@ -48,7 +48,7 @@
          * 启动slides
          */
 		function initReveal() {
-			Reveal.initialize({
+            var config = {
 				controls: true,
 				progress: true,
 				history: true,
@@ -69,7 +69,11 @@
 					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
 					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
-			});
+            };
+            if (Reveal.getQueryHash().width) config.width = Reveal.getQueryHash().width;
+            if (Reveal.getQueryHash().height) config.height = Reveal.getQueryHash().height;
+
+			Reveal.initialize(config);
 		};
 
 

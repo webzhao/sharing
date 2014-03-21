@@ -19,7 +19,7 @@
 
 ## 终于可以写后端代码了...
 
-<p style="font-size: 5em" class="fragment"><span class="icon-thumbs-up"></span></p>
+<p style="font-size: 5em" class="fragment"><span class="fa-thumbs-up"></span></p>
 
 ----------
 
@@ -220,7 +220,7 @@ require('./mypackage');
     <div class="fragment" style="width:350px;height:20px;background:#222;margin-left:150px;border:1px dashed #999"></div>
     <div class="thread fragment" style="position:absolute;top:0;left:360px;"></div>
     <div class="fragment" style="position:absolute;top:0;left:150px;padding-top:230px;width:206px;text-align:center;border-left:2px dashed #fff;border-right:2px dashed #fff;">阻塞...</div>
-    <div class="fragment" style="position:absolute;font-size:5em;bottom:50px;right:20px"><span class="icon-thumbs-down"></span></div>
+    <div class="fragment" style="position:absolute;font-size:5em;bottom:50px;right:20px"><span class="fa-thumbs-down"></span></div>
 </div>
 
 ----------
@@ -419,14 +419,14 @@ util.inherits(MyStream, events.EventEmitter);
 
 <section data-state="green">
     <h2>Q &amp; A</h2>
-    <p style="font-size:5em"><span class="icon-comments"></span></p>
+    <p style="font-size:5em"><span class="fa-comments"></span></p>
 </section>
 
 ----------
 
 <section data-state="red">
     <h2>感谢大家的时间！</h2>
-    <p style="font-size: 5em"><span class="icon-smile"></span></p>
+    <p style="font-size: 5em"><span class="fa-smile"></span></p>
 </section>
 
 ----------
