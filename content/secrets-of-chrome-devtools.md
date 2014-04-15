@@ -1,4 +1,3 @@
-
 @bg: img/devtools/chrome.svg
 
 # Chrome开发者工具的秘密
@@ -263,7 +262,7 @@ while (i++ < 100) {
 
 ## workspace: Chrome as an IDE
 
-<a href="http://localhost:8000" target="_blank">Demo</a>
+<a href="http://localhost:8000" target="_blank">Demo</a>  <a href="https://developers.google.com/chrome-developer-tools/docs/authoring-development-workflow" target="_blank">文档</a>
 
 ---
 
