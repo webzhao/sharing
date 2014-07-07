@@ -1,4 +1,4 @@
-# CSS3布局：新的可能性
+# CSS3布局：新的可能
 
 ---
 
@@ -266,7 +266,21 @@ Flexbox是W3C布局方面标准中的*终极武器*
 
 ---
 
-[Demo](http://adobe-webplatform.github.io/road-trip/)
+```css
+.content {
+    /* 内容源流入到指定管道中 */
+    flow-into: <pipe-name>;
+}
+
+.region {
+    /* 从指定管道中读入内容 */
+    flow-from: <pipe-name>;
+}
+```
+
+---
+
+[Demo](demos/css3/region.html)
 
 ---
 
@@ -288,7 +302,65 @@ Flexbox是W3C布局方面标准中的*终极武器*
 
 ---
 
+```css
+.content {
+    /*
+     * shape-outside: 将内容在围绕在一个形状外面显示
+     * shape-inside: 将内容在一个形状内部显示
+     */
+    shape-outside: polygon( /* parameters */ );
+}
+```
 
+---
+
+## 形状
+
+* circle( radius at position )
+* polygon( position, position, position ... )
+* ellipse( radius1, radius2 at position )
+* inset( top, right, bottom, left, border-radius )
+
+---
+
+[Demo]()
+
+---
+
+## CSS Shapes浏览器支持
+
+<ul class="browser-support">
+    <li><img src="img/css3/chrome.png" alt="Chrome">37+</li>
+    <li><img src="img/css3/safari.png" alt="Safari">8.0+</li>
+    <li><img src="img/css3/ios.png" alt="iOS">8.0+</li>
+<ul>
+
+---
+
+@state: green
+
+<p style="font-size:6em"><i class="fa-comments"></i></p>
+
+---
+
+@fragment
+
+## 总结
+
+* box-sizing
+* display: table
+* flexbox
+* multiple column
+* css region
+* css shape
+
+---
+
+@state: blue
+
+## 谢谢大家！
+
+<p style="font-size:6em"><i class="icon-smile"></i></p>
 
 
 
