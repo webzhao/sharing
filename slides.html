@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
         <link href="css/font-awesome.min.css" rel="stylesheet">
-        <style>
+        <style id="slide_css">
             .reveal [class^="fa-"],
             .reveal [class*=" fa-"] {
               font-family: FontAwesome;
@@ -23,6 +23,7 @@
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="plugin/prism/prism.css">
 		<link rel="stylesheet" href="css/print/pdf.css" media="print">
+        <style></style>
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -163,7 +164,7 @@
             slide.setAttribute('data-state', state);
             //add css rule
             var stylesheet = document.styleSheets[document.styleSheets.length-1];
-            stylesheet.insertRule('.' + state + ' body {background-image:url(' + value + ')}', 1);
+            stylesheet.insertRule('.' + state + ' body {background-image:url(' + value + ')}', 0);
         }
 
         /**
