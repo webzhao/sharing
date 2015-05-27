@@ -1,6 +1,5 @@
-
 ### 前端开发基础课之
-# HTML
+# CSS基础
 
 赵文博@奇舞团
 
@@ -20,131 +19,13 @@
 
 ---
 
-HTML文档结构
+@fragment
 
----
+### 这节课讲什么？
 
-doctype的作用
-
----
-
-常见的doctype（HTML版本、HTML5设计理念）
-
----
-
-html5 vs xhtml
-
----
-
-meta标记
-
-对html的扩展
-
----
-
-keyword
-description
-viewpoint
-页面跳转
-
----
-
-HTML标签之文本标签
-
----
-
-h1-h6
-展示文档结构（简历的例子）
-
----
-
-段落p
-
----
-
-文本语义
-* a （anchor）
-* abbr 缩写
-* br换行符（一般不用）
-* del/ins 删除插入
-* dfn 定义
-* em 强调
-* strong 重要的内容
-* sub/sup 上标、下标
-
----
-
-引用
-blockquote
-cite
-
----
-
-列表标签
-
-有序列表
-无需列表
-定义列表
-
----
-
-泛型元素
-div、span
-
----
-
-网页组织标签
-section 区块、章节
-article 独立内容的文章
-nav 导航
-aside 侧栏
-header 顶栏
-footer 底部
-
----
-
-使用图片
-
-figure
-caption
-img
-alt
-width(自适应)
-height
-
----
-
-切图
-简单的切图方法
-取色
-测距
-
----
-
-图片格式
-
-png
-jpg
-gif
-
----
-
-链接
-
-a href target
-
----
-
-mailto:
-tel:
-
----
-
-休息
-
----
-
-CSS
+* HTML中要掌握的关键点
+* 图片与使用PhotoShop切图
+* 示例：大家作业中的问题
 
 ---
 
