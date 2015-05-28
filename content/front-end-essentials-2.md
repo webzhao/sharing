@@ -27,7 +27,6 @@
 * 初级CSS选择器
 * 继承和优先级
 * 控制文本样式
-* 简单盒模型
 
 ---
 
@@ -394,7 +393,7 @@ h1 {
 
 ---
 
-<iframe src="http://jsbin.com/bodayisali/1/embed?html,output" width="100%" height="400"></iframe>
+<iframe src="http://jsbin.com/vogefisiwo/1/embed?html,output" width="100%" height="400"></iframe>
 
 ---
 
@@ -478,65 +477,6 @@ font: 14px serif;
 * 定义了文本的一些装饰效果，比如下划线、删除线等
 * 初始值为none，可继承
 * 其它值：<span style="text-decoration:underline">underline</span> | <del>line-through</del> | <span style="text-decoration:overline">overline</span>
-
----
-
-## 盒模型基础
-
----
-
-### box model
-
-![box model](img/essentials/box-model.png)
-
----
-
-### width
-
-* 指定content box宽度
-* 百分数相对于父容器（包含块）的content box宽度
-
----
-
-### height
-
-* 指定content box高度
-* 百分数相对于父容器（包含块）的content box高度
-* 只有当包含块的高度不依赖该元素时，百分比高度才生效
-
----
-
-### padding
-
-* 内边距
-* padding-top、padding-right、padding-bottom、padding-left
-* 缩写：padding
-
----
-
-### margin
-
-* 外边距
-* margin-top、margin-right、margin-bottom、margin-left
-* 缩写：margin
-
----
-
-### border
-
-* 边框
-* border-width: 1px
-* border-style: solid | dashed | dotted
-* border-color: #f00
-* border: 1px solid #ccc
-* border-left-width: 4px
-
----
-
-### 当四条边框颜色不同时
-
-<iframe height='500' scrolling='no' src='//codepen.io/Tresva/embed/dxHsb/?height=500&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Tresva/pen/dxHsb/'>Triangles with CSS explanation</a> by Henry Delro (<a href='http://codepen.io/Tresva'>@Tresva</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
 
 ---
 
