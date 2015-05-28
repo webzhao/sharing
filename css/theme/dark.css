@@ -234,6 +234,12 @@ body {
     text-shadow: 1px 1px 1px #000, 0 0 1em #000;
 }
 
+.reveal li ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    font-size: 0.8em;
+}
+
 /*********************************************
  * code
  *********************************************/
