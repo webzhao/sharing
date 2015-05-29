@@ -5,7 +5,7 @@
 
 ---
 
-## whoami
+### whoami
 
 * **赵文博**
 * 奇舞团前端工程师
@@ -18,8 +18,6 @@
 </p>
 
 ---
-
-@fragment
 
 ### 这节课讲什么？
 
@@ -71,7 +69,8 @@
 
 ### margin折叠
 
-<iframe src="http://jsbin.com/ciqunayifi/1/embed?html,css" width="660" height="480"></iframe>
+<iframe height='388' scrolling='no' src='http://codepen.io/webzhao/embed/EjZWqV/?height=388&theme-id=0&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/EjZWqV/'>EjZWqV</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
@@ -86,17 +85,34 @@
 
 ---
 
+### 练习
+
+<iframe height='337' scrolling='no' src='http://codepen.io/webzhao/embed/YXNVra/?height=337&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/YXNVra/'>YXNVra</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
 ### 当四条边框颜色不同时
 
-<iframe height='500' scrolling='no' src='http://codepen.io/Tresva/embed/dxHsb/?height=500&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+<iframe height='372' scrolling='no' src='http://codepen.io/webzhao/embed/XbpRzj/?height=372&theme-id=0&default-tab=css' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/XbpRzj/'>Triangles with CSS explanation</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+### 练习
+
+使用CSS制作一个<em style="font-size:2em">▼</em>
 
 ---
 
 ### 改变盒模型计算方式
 
-* box-sizing
-    * content-box 默认值
-    * border-box 宽度值包含border
+<iframe height='338' scrolling='no' src='http://codepen.io/webzhao/embed/XbpRqN/?height=338&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/XbpRqN/'>XbpRqN</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+## 休息
 
 ---
 
@@ -122,13 +138,6 @@
 * 会被格式化成块状的元素
 * 例如p、div、section等
 * 将display设置为block、list-item、table使元素变为块级
-
----
-
-### 块级*框*(Block)
-
-* 每个块级元素生成一个块级框来包含其子框
-* 块级框参与*块级格式化上下文*
 
 ---
 
@@ -171,49 +180,109 @@
 
 ---
 
-### 练习
+### 浮动（float） 
 
+* 浮动可以实现将多个块级框并排显示
+* 浮动元素从排版流中脱离，被漂浮在容器左边或右边
+* 浮动元素不会影响其后面的块级框
+* 但是浮动元素后面的行级元素会避开浮动元素
 
+---
+
+### 浮动
+
+<iframe height='260' scrolling='no' src='http://codepen.io/webzhao/embed/pJRPBy/?height=260&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/pJRPBy/'>pJRPBy</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+### clear
+
+* 指定元素哪一边不能与之前的浮动框相邻
+* clear: left | right | both
+
+---
+
+### 清除浮动的方法
+
+* clear
+* Block Formatting Contexts（BFC）
 
 ---
 
 ### 块级格式化上下文
 
-* Block Formatting Contexts（BFC）
 * 在BFC中，框会从包含块的顶部开始，从上到下摆放
-* BFC的创建
-    * 浮动框
-    * 绝对定位框
-    * 非块级的块容器(inline-block)
-    * overflow属性非visible的块框
-
-
+* BFC内的浮动不会影响到BFC外部的元素
+* BFC的高度会包含其内的浮动元素
+* BFC不会和浮动元素重叠
 
 ---
 
+### BFC的创建
+
+* 浮动框
+* 绝对定位框
+* 非块级的块容器(inline-block)
+* overflow属性非visible的块框
 
 ---
 
+### BFC的作用
+
+* 清除浮动
+* 防止margin折叠
+* 双栏布局
 
 ---
 
+### 练习
+
+<iframe height='441' scrolling='no' src='http://codepen.io/webzhao/embed/rVjwLG/?height=441&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/rVjwLG/'>rVjwLG</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
+### position
+
+* static，非定位，默认值
+* relative，相对定位（相对自己）
+* absolute，绝对定位，相对非static父级元素定位
 
 ---
 
+### 练习
+
+<iframe height='446' scrolling='no' src='http://codepen.io/webzhao/embed/LVxLxg/?height=446&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/LVxLxg/'>LVxLxg</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
+### position:fixed
+
+* 顶栏固定
 
 ---
 
+### 堆叠层次
+
+* z-index指定元素在所属堆叠上下文中的层次
+* 堆叠上下文的形成
+    * z-index值为非auto的定位元素
 
 ---
 
+### 绘制顺序
+
+* 每个堆叠上下文中， 从下到上的顺序显示：
+    * background, boder
+    * z-index为负值的定位元素
+    * 正常块级元素
+    * 浮动
+    * 行级元素
+    * z-index为0
+    * z-index为正数
 
 ---
 
-
----
+谢谢
