@@ -116,10 +116,6 @@
 
 ---
 
-## 休息
-
----
-
 ## 浏览器如何排版的
 
 视觉格式化模型
@@ -168,6 +164,19 @@
 
 ---
 
+## 休息
+
+---
+
+### Generated Content
+
+* ::before和::after
+* content
+* 伪类 vs. 伪元素
+
+---
+
+
 ### 定位方案
 
 * 正常流
@@ -195,7 +204,7 @@
 
 ### 浮动
 
-<iframe height='260' scrolling='no' src='http://codepen.io/webzhao/embed/pJRPBy/?height=260&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/pJRPBy/'>pJRPBy</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='360' scrolling='no' src='http://codepen.io/webzhao/embed/pJRPBy/?height=360&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/pJRPBy/'>pJRPBy</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -209,7 +218,7 @@
 
 ### 清除浮动的方法
 
-* clear
+* clear (Generated content)
 * Block Formatting Contexts（BFC）
 
 ---
@@ -283,6 +292,12 @@
 
 ---
 
+### 练习
+
+做一个图标 <span class="fa fa-home"></span>
+
+---
+
 ### 堆叠层次
 
 * z-index，整数
@@ -290,7 +305,9 @@
 
 ---
 
-<iframe height='204' scrolling='no' src='http://codepen.io/webzhao/embed/eNgGyZ/?height=204&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/eNgGyZ/'>eNgGyZ</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+### z-index的大小与层次
+
+<iframe height='504' scrolling='no' src='http://codepen.io/webzhao/embed/eNgGyZ/?height=504&theme-id=0&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/eNgGyZ/'>eNgGyZ</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
