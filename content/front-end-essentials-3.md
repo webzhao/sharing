@@ -74,6 +74,10 @@
 
 ---
 
+### margin可以为负值吗？
+
+---
+
 ### border
 
 * 边框
@@ -180,7 +184,7 @@
 
 ---
 
-### 浮动（float） 
+### 浮动（float）
 
 * 浮动可以实现将多个块级框并排显示
 * 浮动元素从排版流中脱离，被漂浮在容器左边或右边
@@ -258,9 +262,36 @@
 
 ---
 
+### 自动计算
+
+* 这些值都可以不指定
+    * top
+    * left
+    * right
+    * bottom
+    * width
+    * height
+* 如果冲突了怎么办?
+* [示例](http://codepen.io/webzhao/pen/EjZwEW?editors=110)
+
+---
+
 ### position:fixed
 
-* 顶栏固定
+* 相对于Viewport定位
+* 不会随页面滚动发生位置变化
+
+---
+
+### 堆叠层次
+
+* z-index，整数
+* z-index大的一定在上面吗？
+
+---
+
+<iframe height='204' scrolling='no' src='http://codepen.io/webzhao/embed/eNgGyZ/?height=204&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/eNgGyZ/'>eNgGyZ</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
@@ -284,5 +315,13 @@
     * z-index为正数
 
 ---
+
+### 练习
+
+<iframe height='392' scrolling='no' src='http://codepen.io/webzhao/embed/EjZwRW/?height=392&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/EjZwRW/'>EjZwRW</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
 
 谢谢
