@@ -90,10 +90,6 @@
 
 ---
 
-休息
-
----
-
 ### CSS 3
 
 * 高级选择器
@@ -138,6 +134,10 @@
 
 <iframe height='322' scrolling='no' src='http://codepen.io/webzhao/embed/OVWQgB/?height=322&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/OVWQgB/'>OVWQgB</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
+
+---
+
+休息
 
 ---
 
@@ -191,7 +191,19 @@
 
 ### animation
 
-<iframe width="100%" height="300" src="//jsfiddle.net/jonathansampson/REKcR/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="http://jsfiddle.net/jonathansampson/REKcR/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+---
+
+<iframe height='790' scrolling='no' src='http://codepen.io/webzhao/embed/oXBqRr/?height=790&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/oXBqRr/'>oXBqRr</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+### 练习
+
+<iframe height='626' scrolling='no' src='http://codepen.io/webzhao/embed/EjZEBO/?height=626&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/EjZEBO/'>EjZEBO</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
