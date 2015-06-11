@@ -42,6 +42,13 @@ File upload
 
 ---
 
+### 注意
+
+* 图片一般1-5M左右，上传前一般需要压缩
+* 图片包含转向信息，需要处理
+
+---
+
 ### 设备运动API（devicemotion）
 
 * devicemotion事件
