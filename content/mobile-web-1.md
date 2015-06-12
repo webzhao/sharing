@@ -123,13 +123,13 @@
 
 ### iOS
 
-![iOS Version](img/mobile/ios-version.png)
+<img alt="iOS Version" src="img/mobile/ios-version.png" class="dark">
 
 ---
 
 ### Android
 
-![Android Version](img/mobile/android-version.png)
+<img alt="Android Version" src="img/mobile/android-version.png" class="dark">
 
 ---
 
@@ -229,6 +229,3 @@
     * 原生JS
     * Zepto
 
----
-
-休息～

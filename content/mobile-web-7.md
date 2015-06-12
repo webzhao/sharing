@@ -19,7 +19,7 @@
 
 ---
 
-### 设置hosts
+## 如何设置hosts？
 
 ---
 
@@ -64,8 +64,10 @@
 
 ### 限制
 
-* <i class="fa-apple"></i> iOS 6+
-* <i class="fa-android"></i> Android 4.0+
+* iOS 6+
+* Android 4.0+
+
+---
 
 ### 低版本Android：Weinre
 

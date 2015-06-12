@@ -134,7 +134,7 @@
 
 ---
 
-![css-pixel](img/mobile/css-pixel.png)
+<img alt="css-pixel" src="img/mobile/css-pixel.png" class="dark">
 
 ---
 
@@ -238,6 +238,3 @@ dpr >=2 高分辨率屏，retina屏幕
   * 阴影
 * 使用字体图标（Web font）
 
----
-
-休息
