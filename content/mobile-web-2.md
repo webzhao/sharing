@@ -120,6 +120,10 @@
 
 ---
 
+### 你的手机分辨率是多少？
+
+---
+
 ### 物理像素
 
 * 一个物理像素是显示屏能显示的最小物理单元
@@ -229,12 +233,15 @@ dpr >=2 高分辨率屏，retina屏幕
 
 ---
 
-### 其它选项
+### 其它选项(减少图片的使用)
 
-* 使用SVG图片
-* 使用CSS模拟一些形状
-  * 形状
-  * 圆角
-  * 阴影
+* 使用[SVG图片](img/mobile/svg-demo.svg)
+* 使用[CSS模拟一些形状](https://css-tricks.com/examples/ShapesOfCSS/)
+    * 形状
+    * 圆角
+    * 阴影
 * 使用字体图标（Web font）
+    - [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/)
+    - [Font Spider](http://font-spider.org/)
+
 

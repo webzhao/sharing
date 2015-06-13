@@ -6,6 +6,9 @@
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+html, body {
+    overflow-y: auto;
+}
 body {
     background: #111111;
     background-color: #111111;
@@ -85,6 +88,7 @@ body {
     margin: 15px 0px;
     border: none;
     background: none;
+    max-height: 640px;
 }
 
 /*********************************************

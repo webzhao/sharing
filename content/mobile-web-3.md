@@ -19,12 +19,14 @@
 
 * 大图随容器自动缩放，保持高宽比
 * max-width: 100%
+* [Demo](http://output.jsbin.com/hifubu)
 
 ---
 
 ### 背景图片
 
 * background-size: cover
+* [Demo](http://www.h5shuo.com/pc)
 
 ---
 
@@ -133,5 +135,7 @@ http://pleeease.io/play/
 ---
 
 ### 练习：几页全屏应用
+
+[Demo](http://output.jsbin.com/dabuya)
 
 

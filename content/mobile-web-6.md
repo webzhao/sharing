@@ -12,8 +12,8 @@
 
 ### get current position
 
-```
-navigation.getCurrentPosition(function(pos){
+```javascript
+navigator.getCurrentPosition(function(pos){
     console.log(pos);
 }, function(err){
     console.log(err);
@@ -58,7 +58,7 @@ navigation.getCurrentPosition(function(pos){
 
 ### Demo
 
-File upload
+[File upload](http://codepen.io/webzhao/embed/gpRNBQ/?height=480&theme-id=0&default-tab=result)
 
 ---
 
@@ -83,6 +83,6 @@ File upload
 
 ### 练习
 
-摇一摇
+[摇一摇](http://codepen.io/webzhao/embed/pJwMvy/?height=480&theme-id=0&default-tab=result)
 
 

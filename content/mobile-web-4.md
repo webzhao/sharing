@@ -2,19 +2,21 @@
 
 ---
 
-### 鼠标事件 vs. touch事件
+### 鼠标事件
 
-* 鼠标事件
-	- mousedown
-	- mousemove
-	- mouseup
-	- click
+- mousedown
+- mousemove
+- mouseup
+- click
 
-* touch事件
-	- touchstart
-	- touchmove
-	- touchend
-	- touchcancel
+---
+
+### touch事件
+
+- touchstart
+- touchmove
+- touchend
+- touchcancel
 
 ---
 
@@ -78,7 +80,7 @@
 
 ### 练习
 
-全屏网页拖动 
+[图片拖动](http://output.jsbin.com/josoda)
 
 ---
 
