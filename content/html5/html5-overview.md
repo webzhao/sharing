@@ -4,27 +4,8 @@
 
 ### HTML5的兴起
 
-* XHTML
+* XHTML2 vs. HTML5
 * 移动Web
-
----
-
-### HTML4 vs. XHTML
-
-```markup
-<div CLASS=test>This is a <br> test.</div>
-<script type="text/javascript">
-    alert(1);
-</script>
-```
-```markup
-<div class="test">This is a <br/> test.</div>
-<script type="text/javascript">
-<![CDATA[
-    alert(1);
-]]>
-</script>
-```
 
 ---
 
@@ -39,17 +20,105 @@
 
 ---
 
-### HTML 5 标签
-### &nbsp;
+### HTML5 有哪些东西？
 
-<object data="/img/essentials/content-model.svg" height="360" width="1000"></object>
+<style>
+.reveal table.html5 {
+    margin: 0 auto;
+}
+.html5 img {
+    width: 3em;
+}
+table.html5 td {
+    text-align: center;
+    padding: 1em;
+}
+</style>
+<table class="html5">
+    <tr>
+        <td><img src="img/html5/semantics.svg?1"><br>语义化标签</td>
+        <td><img src="img/html5/integration.svg?1"><br>性能和集成</td>
+        <td><img src="img/html5/connectivity.svg?1"><br>连通性</td>
+        <td><img src="img/html5/offline.svg?1"><br>离线与存储</td>
+    </tr>
+    <tr>
+        <td><img src="img/html5/device.svg?1"><br>设备访问</td>
+        <td><img src="img/html5/multimedia.svg?1"><br>多媒体</td>
+        <td><img src="img/html5/css3.svg?1"><br>CSS3样式</td>
+        <td><img src="img/html5/3d.svg?1"><br>图形与3D效果</td>
+    </tr>
+</table>
 
 ---
 
-### 语义化
+### [语义化](/demos/html5/semantics.html)
 
-* HTML中的元素、属性及属性值都拥有某些含义
-* 开发者应该遵循*语义*来编写HTML
+* 结构
+    * section、article、nav、header、footer、aside、main
+* 媒体
+    * video、audio
+* 表单
+    * 新增表单验证和表单类型
+* 其它
+    * figure、data、time、progress
+
+---
+
+### 性能 & 集成
+
+* [Web Workers](http://html5demos.com/worker)
+* [拖放](http://html5demos.com/dnd-upload)
+* XMLHttpRequest Level 2
+* [History API](http://html5demos.com/history/second)
+* requestAnimationFrame
+* [全屏 API](http://davidwalsh.name/demo/fullscreen.php)
+
+---
+
+### 连通性
+
+* Web Sockets
+* [WebRTC](http://www.clicktorelease.com/code/optical-flow-webrtc/)
+
+---
+
+### 设备访问
+
+* 使用地理位置定位
+* 检测设备方向
+
+---
+
+### 离线 & 存储
+
+* 离线资源：应用程序缓存
+* 在线和离线事件
+* localStorage
+* IndexedDB
+* 文件API
+
+---
+
+### CSS3样式
+
+* 更灵活的布局方式
+* 动画效果
+* 阴影、圆角、边框等
+
+---
+
+### 多媒体
+
+* 视频
+* 音频
+
+---
+
+### 图形与3D效果
+
+* Canvas绘图
+* SVG矢量图
+* WebGL
 
 ---
 ### 兼容性

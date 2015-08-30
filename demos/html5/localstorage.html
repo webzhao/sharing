@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>localStorage</title>
+    </head>
+    <body>
+        <textarea id="text" rows="8" cols="40"></textarea>
+        <script type="text/javascript">
+            var textarea = document.getElementById('text');
+            textarea.value = localStorage.text || '';
+            textarea.oninput = function() {
+                localStorage.text = textarea.value;
+            }
+        </script>
+    </body>
+</html>

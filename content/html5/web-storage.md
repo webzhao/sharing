@@ -2,10 +2,9 @@
 
 ---
 
-### HTML中支持的存储类型
+### HTML5 支持的存储类型
 
 * localStorage
-* Web SQL
 * indexedDB
 * App Cache
 
@@ -13,7 +12,8 @@
 
 ### localStorage
 
-* 存储机制，通过该机制，浏览器可以安全地存储键值对
+* 一种在本地存储数据的技术
+* 存储 key / value 字符串
 
 ---
 
@@ -47,6 +47,10 @@ localStorage.clear();
 ```
 ---
 
+### [Demo](/demos/html5/localstorage.html)
+
+---
+
 ### 域名限制
 
 * 数据按域名进行存储
@@ -60,6 +64,7 @@ localStorage.clear();
 ### 时间限制
 
 * localStorage 无限制
+    * 网站开发者负责清除写入的本地存储
 * sessionStorage 关闭浏览器后失效
 
 ---
@@ -67,6 +72,9 @@ localStorage.clear();
 ### 容量限制
 
 * 不同浏览器的策略不同
+    * Safari 5M
+    * 其它浏览器 10M
+* QUOTA_EXCEEDED_ERR异常
 
 ---
 
@@ -80,31 +88,51 @@ localStorage.clear();
 
 ### localStorage vs. Cookie
 
-* 是否发送服务器
-* 容量
+<style>
+.reveal table {
+    margin: 0 auto;
+}
+.reveal table td, .reveal table th {
+    padding: 0.5em 1em;
+}
+</style>
+
+|  | localStorage     | Cookie |
+| ------------- | ------------- | -------------|
+| 发送服务器？ | 否 | 是 |
+| 容量 | 5M / 10M  | <4K |
+| 有效期 | 永久，需要开发者清理 | 可设置有效期 |
 
 ---
 
-### localStorage应用
+### localStorage应用场景
 
-* 存储用户数据
-* 当作缓存使用
+* 存储不需要每次发送到服务器的用户数据
+* 当作缓存使用（移动端）
 
 ---
 
 ### Web SQL
 
 * 基于SQLite的关系型数据库存储
-* 适用于存储比较复杂的
+* 适用于存储比较复杂的结构化数据
 
 ---
 
 ### 操作数据
 
 ```javascript
-var db = openDatabase('dbname', '1', 'todo list example db', 2 * 1024 * 1024);
+var db = openDatabase(
+    'dbname',
+    '1',
+    'todo list example db',
+    2 * 1024 * 1024
+);
 database.transaction(function(tx) {
-    tx.executeSql("CREATE TABLE IF NOT EXISTS tasks (id REAL UNIQUE, text TEXT)", []);
+    tx.executeSql(
+        "CREATE TABLE tasks (id REAL UNIQUE, text TEXT)",
+        []
+    );
 });
 ```
 
@@ -112,32 +140,58 @@ database.transaction(function(tx) {
 
 ### Web SQL 状态
 
-* 标准暂停
-* 推荐使用indexedDB
+* 标准废弃
+* 推荐使用indexedDB代替
 
 ---
 
 ### indexedDB
 
-* NoSQL数据
+* NoSQL数据库，key-value键值对储存数据
+* 异步接口
 * 对JavaScript对象友好
+* 同源策略
 
 ---
 
-### 创建数据库
+### 基本概念
+
+* 数据库
+* Object Store，存储一类数据，类比关系数据库中的表
+* Key：组织Object Store中的对象
+* Value：存储的内容，可以是JavaScript中的基本数据类型或Object、Array、Date等
+* Cursor：游标，遍历结果集的机制
+
+---
+
+### 连接数据库
 
 ```javascript
-window.indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.msIndexedDB;
-
-if ('webkitIndexedDB' in window) {
-  window.IDBTransaction = window.webkitIDBTransaction;
-  window.IDBKeyRange = window.webkitIDBKeyRange;
+indexedDB = window.indexedDB
+         || window.webkitIndexedDB
+         || window.mozIndexedDB
+         || window.msIndexedDB;
+var db;
+var request = indexedDB.open("todoDB");
+request.onerror = function(event) {
+    //处理错误
 }
+request.onsuccess = function(event) {
+    db = request.result;
+}
+```
 
-indexedDB.db = null;
-indexedDB.onerror = function(e) {
-  console.log(e);
-};
+---
+
+### 创建 Object Store
+
+```javascript
+// 假设要存储的对象格式为 { id: 1, title: 'clean room', done: false }
+var store = db.createObjectStore(
+    "customers",
+    { keyPath: "id", autoIncrement: true }
+);
+store.createIndex("id", "id", { unique: true });
 ```
 
 ---
