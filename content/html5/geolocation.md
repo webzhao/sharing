@@ -13,7 +13,7 @@
 ### get current position
 
 ```javascript
-navigator.getCurrentPosition(function(pos){
+navigator.geolocation.getCurrentPosition(function(pos){
     console.log(pos);
 }, function(err){
     console.log(err);
@@ -37,3 +37,35 @@ navigator.getCurrentPosition(function(pos){
 * 持续跟踪设备位置的改变
 * navigator.geolocation.watchPosition
 * navigator.geolocation.clearWatch
+
+---
+
+### 经纬度 --> 地址
+
+* 逆向地理编码API
+
+---
+
+### Geolocation使用注意事项
+
+* 用户授权过程必不可少
+* 定位速度比较慢
+* Google服务不稳定
+
+---
+
+### 兼容性
+
+* IE9+
+* Firefox
+* Chrome
+* iOS
+* Android
+
+---
+
+@state: green
+
+<p style="font-size:6em"><i class="fa fa-comments"></i></p>
+
+

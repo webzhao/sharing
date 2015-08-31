@@ -4,7 +4,7 @@
 
 ### Canvas是什么？
 
-* HTML5绘图元素
+* HTML5新增的一个绘图元素
 * 使用JavaScript控制图形绘制
 * 可绘制路径、矩形、圆形、字符以及添加图像等
 
@@ -26,32 +26,27 @@
 
 ### 坐标系
 
-* 笛卡尔坐标
-* 左上角为原点 (0,0)
-* x轴向右，y轴向下
+<img src="img/html5/axis.jpg">
 
 ---
 
 ### 矩形
 
-```javascript
-var canvas = document.getElementById('canvas');
-if (canvas.getContext) {
-  var ctx = canvas.getContext('2d');
+* cxt.fillRect(x, y, w, h);
+* cxt.clearRect(x, y, w, h);
+* cxt.strokeRect(x, y, w, h);
 
-  ctx.fillRect(25,25,100,100);
-  ctx.clearRect(45,45,60,60);
-  ctx.strokeRect(50,50,50,50);
-}
-```
+---
+
+<iframe src="http://jsbin.com/vamewa/1/embed?js,output" frameborder="0" width="800" height="600"></iframe>
 
 ---
 
 ### 路径
 
 * beginPath() 开始路径绘制
-* moveTo() 移动到指定位置
-* lineTo() 从当前位置绘制直线到指定位置
+* moveTo(x, y) 移动到指定位置
+* lineTo(x, y) 从当前位置绘制直线到指定位置
 * closePath() 结束路径
 * stroke() 描边
 * fill() 填充
@@ -60,43 +55,121 @@ if (canvas.getContext) {
 
 ### 画个三角形
 
-```javascript
-var canvas = document.getElementById('canvas');
-if (canvas.getContext){
-  var ctx = canvas.getContext('2d');
-
-  ctx.beginPath();
-  ctx.moveTo(75,50);
-  ctx.lineTo(100,75);
-  ctx.lineTo(100,25);
-  ctx.fill();
-}
-```
+<iframe src="http://jsbin.com/tozire/1/embed?js,output" frameborder="0" width="800" height="600"></iframe>
 
 ---
 
 ### 曲线
 
-* arc(x, y, radius, startAngle, endAngle, anticlockwise) 圆弧
-* quadraticCurveTo(cp1x, cp1y, x, y) 二次贝塞尔曲线
-* bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y) 三次贝塞尔曲线
+```javascript
+// 圆弧
+arc(x, y, radius, startAngle, endAngle, anticlockwise)
+// 二次贝塞尔曲线
+quadraticCurveTo(cp1x, cp1y, x, y)
+// 三次贝塞尔曲线
+bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
+```
+
+---
+
+### 贝塞尔曲线
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif" width="800">
+
+---
+
+### 二阶贝塞尔曲线
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/B%C3%A9zier_2_big.svg" style="background:#fff" width="800">
+
+---
+
+### 三阶贝塞尔曲线
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/db/B%C3%A9zier_3_big.gif" width="800">
+
 
 ---
 
 ### 绘制心形
 
+<iframe src="http://jsbin.com/guwitu/1/embed?js,output" frameborder="0" width="800" height="600"></iframe>
+
+---
+
+### 显示文字
+
+* fillText(text, x, y, maxWidth)
+* strokeText(text, x, y, maxWidth)
+* 文本样式控制
+    * font = "48px Arial"
+    * textAlign = "left"
+* measureText(text)
+
+---
+
+### Demo
+
+<iframe src="http://jsbin.com/keguqu/2/embed?js,output" frameborder="0" width="800" height="600"></iframe>
+
+---
+
+### 使用图片
+
 ```javascript
-var canvas = document.getElementById('canvas');
-if (canvas.getContext){
-  var ctx = canvas.getContext('2d');
-  ctx.beginPath();
-  ctx.moveTo(75,40);
-  ctx.bezierCurveTo(75,37,70,25,50,25);
-  ctx.bezierCurveTo(20,25,20,62.5,20,62.5);
-  ctx.bezierCurveTo(20,80,40,102,75,120);
-  ctx.bezierCurveTo(110,102,130,80,130,62.5);
-  ctx.bezierCurveTo(130,62.5,130,25,100,25);
-  ctx.bezierCurveTo(85,25,75,37,75,40);
-  ctx.fill();
-}
+drawImage(
+    image,
+    sx, sy, sWidth, sHeight, // 原图
+    dx, dy, dWidth, dHeight  // 绘制到Canvas
+)
 ```
+
+---
+
+### Demo
+
+<iframe src="http://jsbin.com/kadami/8/embed?js,output" frameborder="0" width="800" height="600"></iframe>
+
+---
+
+### 变换
+
+* 对画布进行变换
+    * translate(x, y)
+    * scale(x, y)
+    * rotate(angle)
+* save()
+* restore()
+
+---
+
+<iframe src="http://jsbin.com/hiqoto/3/embed?js,output" frameborder="0" width="800" height="600"></iframe>
+
+---
+
+### 动画
+
+<iframe src="http://jsbin.com/tilawuv/2/embed?js,output" frameborder="0" width="800" height="600"></iframe>
+
+---
+
+### 事件绑定
+
+* 只能绑定在canvas元素上
+* 通过事件发生的坐标，判断发生在哪个图形上
+
+---
+
+### Canvas 使用场景
+
+* 对性能要求
+* 图形交互较少
+
+---
+
+@state: green
+
+<p style="font-size:6em"><i class="fa fa-comments"></i></p>
+
+
+

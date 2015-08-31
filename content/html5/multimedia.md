@@ -1,4 +1,4 @@
-## Video 和 audio
+## Video 和 Audio
 
 ---
 
@@ -13,7 +13,10 @@
 ### 引入
 
 ```markup
-<video width="320" height="240" controls="controls">
+<video width="320" height="240" src="movie.ogg">
+</video>
+
+<video width="320" height="240" controls>
   <source src="movie.ogg" type="video/ogg">
   <source src="movie.mp4" type="video/mp4">
 </video>
@@ -32,7 +35,7 @@
 
 ### 视频格式
 
-<table class="dataintable">
+<table style="margin: 0 auto" width="900">
 <tbody><tr>
 <th>格式</th>
 <th style="width:16%">IE</th>
@@ -72,8 +75,11 @@
 
 ---
 
+<video src="http://www.runoob.com/try/demo_source/movie.ogg" controls preload width="600"></video>
 
-### JavaScript控制
+---
+
+### [JavaScript控制](/demos/html5/video.html)
 
 ```javascript
 var v = document.getElementById('video');
@@ -88,13 +94,42 @@ v.load();
 
 * play
 * pause
-* playing
 * waiting
 * seeking
 * timeupdate
 
 ---
 
+### Video与Canvas结合
+
+* drawImage(video, 0, 0, w, h)
+* [demo](http://html5doctor.com/demos/video-canvas-magic/demo1.html)
+
+---
+
 ### Audio
 
-* 和video类似
+```markup
+<audio src="music.ogg">
+</audio>
+
+<audio controls>
+  <source src="music.ogg" type="audio/ogg">
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+```
+
+---
+
+### Web Audio API
+
+* [API](https://webaudio.github.io/web-audio-api/)
+* [Demo](http://mdn.github.io/violent-theremin/)
+
+---
+
+
+@state: green
+
+<p style="font-size:6em"><i class="fa fa-comments"></i></p>
+

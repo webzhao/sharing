@@ -129,3 +129,9 @@ table.html5 td {
 * bug
     * [StackOverflow](http://stackoverflow.com/)
     * [Android Bug List](https://code.google.com/p/android/issues/list)
+
+---
+
+@state: green
+
+<p style="font-size:6em"><i class="fa fa-comments"></i></p>
