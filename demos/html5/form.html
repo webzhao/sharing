@@ -7,11 +7,22 @@
 </head>
 <body>
     <form action="">
-        <p>email: <input type="email"></p>
+        <p>email: <input name="email" type="email"></p>
         <p>url: <input type="url"></p>
         <p>date: <input type="date"></p>
         <p>number: <input type="number"></p>
-        <p>color: <input type="color"></p>
+        <p>color: <input name="color" type="color"></p>
+        <button type="submit">Submit</button>
     </form>
+    <script type="text/javascript">
+        var formElement = document.querySelector("form");
+        formElement.addEventListener('submit', function(e){
+                e.preventDefault();
+                var formData = new FormData(formElement);
+                var request = new XMLHttpRequest();
+                request.open("POST", "submitform.php");
+                request.send(formData);
+            })
+    </script>
 </body>
 </html>

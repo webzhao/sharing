@@ -1,5 +1,7 @@
 ## 动画效果
 
+---
+
 
 ### transition（过渡）
 
@@ -120,3 +122,5 @@ transition: width 1s linear, height 1s linear 1s;
 
 * translate3d(10px, 0, 0)
 * rotateX() 或 rotateY();
+
+---

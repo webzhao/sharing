@@ -55,9 +55,6 @@
 * 练习环境
 	* [Chrome](http://www.google.com/chrome/)或[Firefox](https://www.mozilla.org/)浏览器
 	* [Atom](https://atom.io/)或[Sublime Text](http://www.sublimetext.com/)编辑器
-* 在线提交
-	* 地址：http://jsbin.com
-	* //TODO
 
 ---
 
