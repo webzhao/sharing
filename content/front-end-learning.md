@@ -26,11 +26,11 @@
 
 ---
 
-### 怎么入门？
+### 前端学什么？
 
 ---
 
-### 前端技术三层架构
+### 入门：前端技术三层架构
 
 * HTML
 * CSS
@@ -83,7 +83,8 @@
 
 ---
 
-* CSS
+<img src="img/learning/css-mastery.jpg" height="500"> &nbsp;
+<img src="img/learning/css-definitive-guide.jpg" height="500">
 
 ---
 
@@ -108,10 +109,12 @@
 
 ---
 
+* [CSS 2.1规范](http://www.w3.org/html/ig/zh/wiki/CSS2)
+* 知其所以然
+
 ---
 
-* [CSS规范](http://www.w3.org/html/ig/zh/wiki/CSS2)
-* 知其所以然
+* [如何阅读W3C规范](http://www.chinaw3c.org/how-to-read-spec-gb.html)
 
 ---
 
@@ -125,57 +128,140 @@
 
 ---
 
-* JavaScript高级程序设计
-* JavaScript权威指南
+### 快速入门教程
+
+* [MDN: JavaScript 指南（仅语言特性）](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide)
 
 ---
 
-### 技术文档
-
-* MDN
-* ECMA 262
-* [如何阅读W3C规范](http://www.chinaw3c.org/how-to-read-spec-gb.html)
+<img src="img/learning/javascript-definitive-guide.jpg" height="500"> &nbsp;
+<img src="img/learning/professional-javascript.jpg" height="500">
 
 ---
 
-### 学习要点
+### JavaScript 参考文档
 
-* 遵循 W3C 标准
+* [MDN](https://developer.mozilla.org/)
+* [ECMA 262](http://www.ecma-international.org/ecma-262/6.0/index.html)
+
+---
+
+### 深入学习
+
+---
+
 * 技术 VS 工程
+* 遵循 W3C、ECMA 标准
 
 ---
 
 ### 工程化
 
-* 性能优化
-    * HTTP
-    * Browser渲染过程
-* 团队协作
-    * git
-    * 代码规范性
-* 开发效率
-    * 框架
-    * 组件、复用
+* 开发更快
+* 性能更好
+* 更易维护
+
+---
+
+### 开发效率
+
+* 框架
+    * [jQuery: write less, do more](http://jquery.com/)
+    * [React: A JavaScript Library For Building User Interfaces](https://facebook.github.io/react/)
+
+* 组件、复用
+    * JavaScript Patterns by Stoyan Stefanov
+    * Maintainable JavaScript by Nicholas Zakas
+
+* 工具化
+
+---
+
+### 性能优化
+
+* HTTP
+    * HTTP 权威指南
+
+* Browser渲染过程
+    * [浏览器的工作原理：新式网络浏览器幕后揭秘](http://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+
+* 一些书
+    * Even Faster Web Sites
+    * High Performance Browser Networking
+
+---
+
+### 团队协作
+
+* 代码规范性
+    * [Primer by Github](http://primercss.io/guidelines/)
+    * [idiomatic.js](https://github.com/rwaldron/idiomatic.js/tree/master/translations/zh_CN)
+
+* git
+    * [git - 简易指南](http://www.bootcss.com/p/git-guide/)
+    * [Pro Git](http://git-scm.com/book/zh/v2)
 
 ---
 
 ### 遇到问题怎么办？
 
-* 调试：熟悉你的调试工具
-    * XHR断点
-    * DOM断点
-* StackOverflow
-* Google
+---
+
+### 调试
+
+* 熟悉调试工具
+    * [Discover DevTools](http://discover-devtools.codeschool.com/)
+        * XHR断点
+        * DOM断点
+    * [Chrome DevTools Docs](https://developer.chrome.com/devtools)
+
+* [The Art of Debugging](https://remysharp.com/2015/10/14/the-art-of-debugging)
+
+---
+
+### 求助
+
+* [StackOverflow](http://stackoverflow.com/)
+* [Google](http://google.com)
 * 社区（论坛、群）
 
 ---
 
-### 保持更新
+## 与时俱进
 
-* blog
-* weekly
-* 会议
+---
+
+### 网站
+
+* [Smashing Magazine](http://www.smashingmagazine.com/)
+* [HTML5 Rocks](http://www.html5rocks.com/)
+* [CSS Tricks](https://css-tricks.com/)
+* [w3ctech](http://www.w3ctech.com/)
+* [W3C Plus](http://www.w3cplus.com/)
+* [div.io](http://div.io/)
+
+---
+
+###  weekly
+
+* [JavaScript Weekly](http://javascriptweekly.com/)
+* [CSS Weekly](http://css-weekly.com/)
+* [奇舞周刊](http://www.75team.com/weekly/)
+
+---
+
+### 会议
+
+* [D2 前端技术论坛](http://d2forum.alibaba-inc.com/)
+* [Velocity Web 性能与运维大会](http://velocity.oreilly.com.cn/)
+* [CSS Conf](http://css.w3ctech.com/)
+* [JS Conf](http://jsconf.cn/)
+
+---
 
 ### 总结与分享
 
+---
+
+## Q & A
 
