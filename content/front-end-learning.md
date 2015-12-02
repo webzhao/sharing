@@ -9,7 +9,7 @@
 * **赵文博**
 * 奇舞团前端工程师
 * 负责360商业系统前端
-<p style="font-size:120%;margin-top:0.5em">
+<p style="font-size:120%;margin-top:0.5em" class="icons">
     <a href="https://github.com/webzhao" target="_blank" title="Github"><i class="fa fa-github"></i></a>&nbsp;
     <a href="http://www.flickr.com/photos/53827079@N06/" target="_blank" title="Flickr"><i class="fa-flickr"></i></a>&nbsp;
     <a href="https://twitter.com/webzhao" target="_blank" title="Twitter"><i class="fa-twitter"></i></a>&nbsp;
@@ -30,7 +30,7 @@
 
 ---
 
-### 入门：前端技术三层架构
+### 入门：前端技术栈
 
 * HTML
 * CSS
@@ -88,7 +88,7 @@
 
 ---
 
-### 例子
+### [例子](http://localhost:8080/demos/learning/css.html)
 
 ```markup
 <div>
@@ -210,10 +210,10 @@
 ### 调试
 
 * 熟悉调试工具
+    * [Chrome DevTools Docs](https://developer.chrome.com/devtools)
     * [Discover DevTools](http://discover-devtools.codeschool.com/)
         * XHR断点
         * DOM断点
-    * [Chrome DevTools Docs](https://developer.chrome.com/devtools)
 
 * [The Art of Debugging](https://remysharp.com/2015/10/14/the-art-of-debugging)
 
@@ -227,7 +227,13 @@
 
 ---
 
-## 与时俱进
+## 持续学习
+
+---
+
+### 参考别人代码
+
+* [Github](https://github.com/)
 
 ---
 
@@ -265,3 +271,13 @@
 
 ## Q & A
 
+
+<style>
+.reveal a:not(.image) {
+    border-bottom: 2px solid;
+}
+.reveal .icons a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+}
+</style>
