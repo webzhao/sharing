@@ -100,6 +100,7 @@ table.html5 td {
 <link href="https://developer.cdn.mozilla.net/static/styles/libs/mathml.css" rel="stylesheet" type="text/css">
 
 <math>
+    <mtable>
     <mtr>
     <mrow>
         <msup>
@@ -167,6 +168,7 @@ table.html5 td {
       <mo>=</mo>
       <mn>0</mn>
     </mtr>
+    </mtable>
 </math>
 
 ---
