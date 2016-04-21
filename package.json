@@ -1,0 +1,19 @@
+{
+  "name": "sharing",
+  "version": "1.0.0",
+  "description": "Sharing",
+  "main": "index.js",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer & open http://localhost:8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webzhao/sharing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webzhao/sharing/issues"
+  },
+  "homepage": "https://github.com/webzhao/sharing#readme"
+}
