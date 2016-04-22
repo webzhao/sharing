@@ -17,7 +17,7 @@ body {
 }
 
 .reveal {
-    font-family: "Segoe UI Light", "Microsoft Jhenghei", Simhei, sans-serif;
+    font-family: "Segoe UI Light", Helvetica, "Microsoft Jhenghei",  Simhei, sans-serif;
     font-size: 30px;
     font-weight: 200;
     letter-spacing: -0.02em;

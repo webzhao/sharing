@@ -24,8 +24,11 @@
 
 ### 这节课讲什么？
 
-* HTML中要掌握的关键点
-* 图片与使用PhotoShop切图
+* HTML 中的关键点
+    * doctype 与渲染模式
+    * 语义化
+
+* HTML 如何学习？
 
 ---
 
@@ -65,15 +68,19 @@
 
 ## 各种doctype
 
-```plain
+```markup
 <!DOCTYPE HTML PUBLIC
     "-//W3C//DTD HTML 4.01//EN"
     "http://www.w3.org/TR/html4/strict.dtd">
+```
 
+```markup
 <!DOCTYPE html PUBLIC
     "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+```
 
+```markup
 <!DOCTYPE html>
 ```
 
@@ -110,7 +117,6 @@
 ---
 
 ### HTML 5 标签
-### &nbsp;
 
 <object data="/img/essentials/content-model.svg" height="360" width="1000"></object>
 
@@ -120,6 +126,15 @@
 
 * HTML中的元素、属性及属性值都拥有某些含义
 * 开发者应该遵循*语义*来编写HTML
+
+---
+
+### 语义化的好处
+
+* 可访问性
+* 搜索引擎优化
+* 易读
+* 易维护
 
 ---
 
@@ -213,7 +228,6 @@
 
 <p>我最喜欢的一本书是<cite>小王子</cite>。</p>
 ```
-
 
 ---
 
@@ -318,9 +332,68 @@
 
 ---
 
-### 使用PhotoShop进行简单的切图
+### HTML 公共属性
+
+* id
+* title
+* lang
+* style
+* class
+* 自定义 `data-*`
 
 ---
+
+### 如何做到语义化
+
+* 清楚了解每一个标签和属性的语义
+* HTML中只描述内容和结构，样式留给CSS
+* 手写HTML，避免使用生成工具
+* 命名遵循行业通用标准
+
+---
+
+> ### The hardest problem in programming:
+> ## Naming Things
+
+---
+
+### Microformats（微格式）
+
+* hcard / [vcard](https://github.com/akira-cn)
+* h-product
+* h-recipe
+* ...
+
+---
+
+### Schema.org
+
+* [schema.org](http://schema.org/)
+
+---
+
+### ARIA: Accessible Rich Internet Applications
+
+```markup
+<div role="button" aria-label="Refresh"></div>
+```
+
+
+---
+
+### HTML 如何学习
+
+* 教程
+    * [webplatform.org 的 HTML 教程](https://docs.webplatform.org/wiki/html/tutorials)
+    * [CodeCademy HTML & CSS](https://www.codecademy.com/learn/web)
+
+* 手册
+    * [HTML: The Living Standard ✓](https://developers.whatwg.org/)
+    * [W3C HTML5 Specification](https://www.w3.org/TR/html5/)
+
+
+---
+
 
 @state: blue
 
