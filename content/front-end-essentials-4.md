@@ -1,5 +1,5 @@
 ### 前端开发基础课之
-# HTML进阶与CSS3
+# CSS3 与工程化
 
 赵文博@奇舞团
 
@@ -7,86 +7,8 @@
 
 ### 这节课讲什么？
 
-* 表格
-* 表单
 * CSS 3
-
----
-
-## 表格的结构
-
-* table，表格
-* thead，表头
-* tbody，表内容
-* tr，行
-* td，单元格
-* th，表头单元格
-* tfoot，尾
-
-
----
-
-## 一个表格示例
-
-<iframe height='543' scrolling='no' src='http://codepen.io/webzhao/embed/LVxOmq/?height=543&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/LVxOmq/'>Data Table</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-## 表格样式
-
-* border-collapse
-* table-layout: fixed;
-
----
-
-### display: table
-
-<iframe height='398' scrolling='no' src='http://codepen.io/webzhao/embed/qdRVJg/?height=398&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/qdRVJg/'>qdRVJg</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-### 表单
-
-* 表单用来让用户提交信息
-* form元素
-	* action
-	* method
-	* target
-
----
-
-## 各种表单元素
-
-* input
-	* type=text 文本框
-	* type=password 密码
-	* type=radio 单选框
-	* type=checkbox 复选框
-* select & option 下拉框和选项
-* button 按钮
-
----
-
-## demo
-
-<iframe height='708' scrolling='no' src='http://codepen.io/webzhao/embed/vOgpqZ/?height=708&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/vOgpqZ/'>Simple Responsive Form</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-### 新的input类型
-
-<iframe height='1310' scrolling='no' src='http://codepen.io/webzhao/embed/doNdXR/?height=1310&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/doNdXR/'>HTML5 Input Types</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-### 练习
-
-<iframe height='337' scrolling='no' src='http://codepen.io/webzhao/embed/QbdQEo/?height=337&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/QbdQEo/'>Simple Responsive Form</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
+* CSS 工程化
 
 ---
 
@@ -134,10 +56,6 @@
 
 <iframe height='322' scrolling='no' src='http://codepen.io/webzhao/embed/OVWQgB/?height=322&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/OVWQgB/'>OVWQgB</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
-
----
-
-休息
 
 ---
 
@@ -204,6 +122,34 @@
 
 <iframe height='626' scrolling='no' src='http://codepen.io/webzhao/embed/EjZEBO/?height=626&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/webzhao/pen/EjZEBO/'>EjZEBO</a> by webzhao (<a href='http://codepen.io/webzhao'>@webzhao</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
+
+---
+
+## 工程化
+
+---
+
+### 代码风格
+
+* [CSS Style Guide](https://github.com/airbnb/css)
+* 工具
+    * 编辑器自动检查
+    * Git / SVN hook
+
+---
+
+### CSS 命名和代码结构
+
+* [SMACSS: Scalable and Modular Architecture for CSS](https://smacss.com/)
+* [BEM: Block Element Modifier](http://getbem.com/introduction/)
+
+---
+
+### CSS 预处理器
+
+* [LESS](http://lesscss.org/)
+* [SASS](http://sass-lang.com/)
+* [PostCSS](http://postcss.org/)
 
 ---
 
